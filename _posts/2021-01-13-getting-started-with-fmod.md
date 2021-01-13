@@ -1,7 +1,7 @@
 ---
+description: The very first step of connecting FMOD with Unity
 title: Getting started with FMOD in Unity
 featured: images/fmod-logo-sound-design-oddbird.png 
-layout: post
 ---
 
 ### Intro
