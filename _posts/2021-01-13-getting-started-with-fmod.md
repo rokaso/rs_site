@@ -1,5 +1,5 @@
 ---
 title: Getting started with FMOD
-featured: fmod-logo-sound-design-oddbird.png 
+featured: images/fmod-logo-sound-design-oddbird.png 
 layout: post
 ---
