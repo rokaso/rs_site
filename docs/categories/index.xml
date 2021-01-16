@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Sutkus Audio</title>
-    <link>https://rokaso.github.io/rs_site/categories/</link>
+    <link>https://sutkusaudio.com/categories/</link>
     <description>Recent content in Categories on Sutkus Audio</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>rokas@sutkusaudio.com (Rokas Sutkus)</managingEditor>
-    <webMaster>rokas@sutkusaudio.com (Rokas Sutkus)</webMaster><atom:link href="https://rokaso.github.io/rs_site/categories/index.xml" rel="self" type="application/rss+xml" />
+    <webMaster>rokas@sutkusaudio.com (Rokas Sutkus)</webMaster><atom:link href="https://sutkusaudio.com/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -1,4 +1,4 @@
-baseurl = "https://rokaso.github.io/rs_site"
+baseurl = "https://sutkusaudio.com"
 themesDir = "themes"
 publishDir = "docs"
 DefaultContentLanguage = "en"
