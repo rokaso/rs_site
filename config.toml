@@ -1,4 +1,6 @@
 baseurl = "rs_site"
+themesDir = "themes"
+publishDir = "docs"
 DefaultContentLanguage = "en"
 #DefaultContentLanguage = "ja"
 title = "Sutkus Audio"
