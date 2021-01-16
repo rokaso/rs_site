@@ -1,4 +1,4 @@
-baseurl = "https://rokaso.github.io"
+baseurl = "rs_site"
 DefaultContentLanguage = "en"
 #DefaultContentLanguage = "ja"
 title = "Sutkus Audio"
