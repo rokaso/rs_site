@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sutkus Audio</title>
-    <link>rs_site/</link>
-    <description>Recent content on Sutkus Audio</description>
+    <title>unity on Sutkus Audio</title>
+    <link>rs_site/tags/unity/</link>
+    <description>Recent content in unity on Sutkus Audio</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>rokas@sutkusaudio.com (Rokas Sutkus)</managingEditor>
     <webMaster>rokas@sutkusaudio.com (Rokas Sutkus)</webMaster>
-    <lastBuildDate>Wed, 13 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="rs_site/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="rs_site/tags/unity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting started with FMOD in Unity</title>
       <link>rs_site/post/2021-01-13-getting-started-with-fmod/</link>
@@ -15,15 +15,6 @@
       <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
       <guid>rs_site/post/2021-01-13-getting-started-with-fmod/</guid>
       <description>Working in FMOD is quite a time saver with it&amp;rsquo;s capabilities in playing sounds at a given moment, adding effects based on the event that was sent from a game engine and easily shifting from placeholders to the final product. Middleware&amp;rsquo;s like FMOD are used by a lot of audio designers because it is a powerful tool in ones arsenal. And although scripting, coding and programming can sound daunting, with the little help of it and audio designer can do wonders in game development.</description>
-    </item>
-    
-    <item>
-      <title>About me</title>
-      <link>rs_site/page/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
-      <guid>rs_site/page/about/</guid>
-      <description>The creative side I love the feeling that a sound can give to people. A wind chime sound that presented on a chest to fulfill a magical note. The hugeness and power that low frequencies portray as well as higher pitched sounds help to show that something is really small and also cute, not dangerous. Other worldly synthesizer sounds that is used in Sci-Fi world building. To me the most powerful tool in sound design is silence.</description>
     </item>
     
   </channel>
