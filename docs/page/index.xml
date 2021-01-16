@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Sutkus Audio</title>
-    <link>rs_site/page/</link>
+    <link>https://rokaso.github.io/rs_site/page/</link>
     <description>Recent content in Pages on Sutkus Audio</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>rokas@sutkusaudio.com (Rokas Sutkus)</managingEditor>
-    <webMaster>rokas@sutkusaudio.com (Rokas Sutkus)</webMaster><atom:link href="rs_site/page/index.xml" rel="self" type="application/rss+xml" />
+    <webMaster>rokas@sutkusaudio.com (Rokas Sutkus)</webMaster><atom:link href="https://rokaso.github.io/rs_site/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About me</title>
-      <link>rs_site/page/about/</link>
+      <link>https://rokaso.github.io/rs_site/page/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
-      <guid>rs_site/page/about/</guid>
+      <guid>https://rokaso.github.io/rs_site/page/about/</guid>
       <description>The creative side I love the feeling that a sound can give to people. A wind chime sound that presented on a chest to fulfill a magical note. The hugeness and power that low frequencies portray as well as higher pitched sounds help to show that something is really small and also cute, not dangerous. Other worldly synthesizer sounds that is used in Sci-Fi world building. To me the most powerful tool in sound design is silence.</description>
     </item>
     

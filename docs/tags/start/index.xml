@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>start on Sutkus Audio</title>
-    <link>rs_site/tags/start/</link>
+    <link>https://rokaso.github.io/rs_site/tags/start/</link>
     <description>Recent content in start on Sutkus Audio</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>rokas@sutkusaudio.com (Rokas Sutkus)</managingEditor>
     <webMaster>rokas@sutkusaudio.com (Rokas Sutkus)</webMaster>
-    <lastBuildDate>Wed, 13 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="rs_site/tags/start/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://rokaso.github.io/rs_site/tags/start/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting started with FMOD in Unity</title>
-      <link>rs_site/post/2021-01-13-getting-started-with-fmod/</link>
+      <link>https://rokaso.github.io/rs_site/post/2021-01-13-getting-started-with-fmod/</link>
       <pubDate>Wed, 13 Jan 2021 00:00:00 +0000</pubDate>
       <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
-      <guid>rs_site/post/2021-01-13-getting-started-with-fmod/</guid>
+      <guid>https://rokaso.github.io/rs_site/post/2021-01-13-getting-started-with-fmod/</guid>
       <description>Working in FMOD is quite a time saver with it&amp;rsquo;s capabilities in playing sounds at a given moment, adding effects based on the event that was sent from a game engine and easily shifting from placeholders to the final product. Middleware&amp;rsquo;s like FMOD are used by a lot of audio designers because it is a powerful tool in ones arsenal. And although scripting, coding and programming can sound daunting, with the little help of it and audio designer can do wonders in game development.</description>
     </item>
     

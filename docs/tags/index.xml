@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Sutkus Audio</title>
-    <link>rs_site/tags/</link>
+    <link>https://rokaso.github.io/rs_site/tags/</link>
     <description>Recent content in Tags on Sutkus Audio</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>rokas@sutkusaudio.com (Rokas Sutkus)</managingEditor>
     <webMaster>rokas@sutkusaudio.com (Rokas Sutkus)</webMaster>
-    <lastBuildDate>Wed, 13 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="rs_site/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://rokaso.github.io/rs_site/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>fmod</title>
-      <link>rs_site/tags/fmod/</link>
+      <link>https://rokaso.github.io/rs_site/tags/fmod/</link>
       <pubDate>Wed, 13 Jan 2021 00:00:00 +0000</pubDate>
       <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
-      <guid>rs_site/tags/fmod/</guid>
+      <guid>https://rokaso.github.io/rs_site/tags/fmod/</guid>
       <description></description>
     </item>
     
     <item>
       <title>start</title>
-      <link>rs_site/tags/start/</link>
+      <link>https://rokaso.github.io/rs_site/tags/start/</link>
       <pubDate>Wed, 13 Jan 2021 00:00:00 +0000</pubDate>
       <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
-      <guid>rs_site/tags/start/</guid>
+      <guid>https://rokaso.github.io/rs_site/tags/start/</guid>
       <description></description>
     </item>
     
     <item>
       <title>unity</title>
-      <link>rs_site/tags/unity/</link>
+      <link>https://rokaso.github.io/rs_site/tags/unity/</link>
       <pubDate>Wed, 13 Jan 2021 00:00:00 +0000</pubDate>
       <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
-      <guid>rs_site/tags/unity/</guid>
+      <guid>https://rokaso.github.io/rs_site/tags/unity/</guid>
       <description></description>
     </item>
     
