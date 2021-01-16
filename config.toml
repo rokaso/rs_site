@@ -1,4 +1,4 @@
-baseurl = "rs_site"
+baseurl = "https://rokaso.github.io/rs_site"
 themesDir = "themes"
 publishDir = "docs"
 DefaultContentLanguage = "en"
