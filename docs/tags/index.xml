@@ -7,7 +7,43 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>rokas@sutkusaudio.com (Rokas Sutkus)</managingEditor>
     <webMaster>rokas@sutkusaudio.com (Rokas Sutkus)</webMaster>
-    <lastBuildDate>Wed, 13 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sutkusaudio.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sutkusaudio.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>sfx</title>
+      <link>https://sutkusaudio.com/tags/sfx/</link>
+      <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
+      <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
+      <guid>https://sutkusaudio.com/tags/sfx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tools</title>
+      <link>https://sutkusaudio.com/tags/tools/</link>
+      <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
+      <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
+      <guid>https://sutkusaudio.com/tags/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unity</title>
+      <link>https://sutkusaudio.com/tags/unity/</link>
+      <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
+      <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
+      <guid>https://sutkusaudio.com/tags/unity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VR</title>
+      <link>https://sutkusaudio.com/tags/vr/</link>
+      <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
+      <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
+      <guid>https://sutkusaudio.com/tags/vr/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>fmod</title>
       <link>https://sutkusaudio.com/tags/fmod/</link>
@@ -23,15 +59,6 @@
       <pubDate>Wed, 13 Jan 2021 00:00:00 +0000</pubDate>
       <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
       <guid>https://sutkusaudio.com/tags/start/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>unity</title>
-      <link>https://sutkusaudio.com/tags/unity/</link>
-      <pubDate>Wed, 13 Jan 2021 00:00:00 +0000</pubDate>
-      <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
-      <guid>https://sutkusaudio.com/tags/unity/</guid>
       <description></description>
     </item>
     

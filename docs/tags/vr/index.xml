@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VR on Sutkus Audio</title>
+    <link>https://sutkusaudio.com/tags/vr/</link>
+    <description>Recent content in VR on Sutkus Audio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>rokas@sutkusaudio.com (Rokas Sutkus)</managingEditor>
+    <webMaster>rokas@sutkusaudio.com (Rokas Sutkus)</webMaster>
+    <lastBuildDate>Mon, 10 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sutkusaudio.com/tags/vr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Neanderthal tools sound gathering</title>
+      <link>https://sutkusaudio.com/post/2021-05-10-neanderthal-tool-sfx/</link>
+      <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
+      <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
+      <guid>https://sutkusaudio.com/post/2021-05-10-neanderthal-tool-sfx/</guid>
+      <description>To get the best results one must be prepared in advanced to be able to get the most out of what he wants to accomplish. So here I&amp;rsquo;ll be writing the process I had with my friend Edvinas who is doing his masters thesis on interactive media in museums. A bit about the thesis is that they are researching on new ways to help museums convey history in modern day and that is by using VR.</description>
+    </item>
+    
+  </channel>
+</rss>
