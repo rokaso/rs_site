@@ -1,5 +1,5 @@
 ---
-title: Neanderthal tools sound gathering
+title: Recording audio for a VR application concerning Neanderthal legacy
 subtitle: The process we had from gathering sound to implementing into the game  
 date: 2021-05-10
 tags: ["tools", "unity", "sfx", "VR"]
