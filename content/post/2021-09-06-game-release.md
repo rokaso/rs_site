@@ -12,4 +12,6 @@ I could talk all day about this, but that's not why we're here for, aren't we?
 
 Here is the link to the game - [Neanderthal Tools](https://github.com/Edvinas01/neanderthal-tools).
 
+P.S. If you **are** interested in reading more about the game from Edvinas's side I highly recommend reading his development [blog post](https://edvinas.dev/posts/neanderthal-tools/), he goes in depth writing about his process. Enjoy!
+
 ![neanderthal tools photo](/img/neanderthal_tools.png)
