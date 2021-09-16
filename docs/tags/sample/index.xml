@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sample on Sutkus Audio</title>
+    <link>https://sutkusaudio.com/tags/sample/</link>
+    <description>Recent content in sample on Sutkus Audio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>rokas@sutkusaudio.com (Rokas Sutkus)</managingEditor>
+    <webMaster>rokas@sutkusaudio.com (Rokas Sutkus)</webMaster>
+    <lastBuildDate>Thu, 16 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sutkusaudio.com/tags/sample/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Neanderthal Tools Sample Pack</title>
+      <link>https://sutkusaudio.com/post/2021-09-16-vr-neanderthal-tools-sample-pack/</link>
+      <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
+      <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
+      <guid>https://sutkusaudio.com/post/2021-09-16-vr-neanderthal-tools-sample-pack/</guid>
+      <description>Hey there! As the game is open-source all the sfx used in the game are free-to-use. It might be hard a bit to download all the samples from the git directory for some as git and unity file system might not be that easy to use to everyone so I&amp;rsquo;ve compiled all the sounds into a sound pack to download. Also with it, made metadata into the sounds for easier tag searching.</description>
+    </item>
+    
+  </channel>
+</rss>
