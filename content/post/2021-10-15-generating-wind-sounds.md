@@ -1,8 +1,7 @@
 ---
 title: Generating wind from a noise sample in a game engine 
-date: 2021-09-16
+date: 2021-10-28
 tags: ["tools", "unity", "sfx"]
-draft: true
 ---
 
 In here I'll be writing about how I added an interesting system of wind SFX in Unity by using white noise and Unity's sound mixer effects. I'd call this a dynamic wind SFX even. Because right know this is directly linked with the boat's speed velocity. As it goes faster the wind becomes more high pitched and when it is going slower the wind is more on the low-end.
@@ -12,28 +11,33 @@ I found this technique in one of [Blipsounds](https://blipsounds.com/) [video's]
 
 ## Preparing the engine
 First we add the white noise sound into Unity. It is a good practice to add game objects for sounds when working with prefabs to have easy access when more of the same prefabs are generated into the engine. This will be more tidy and you'll have the sounds at hand. Will save time and nerves trying to find all the sound effects, trying to add them every time.
-![adding sound](/img/unity_wind_generated/add_object.gif)
+
+{{< video src="/img/unity_wind_generated/add_object.m4v" >}}
 
 In the object we add a component "Audio Source" which we link the sound that will be played (Also, if you are trying to do this by yourself, don't forget to add an "Audio Listener" component. This was previously added, so I didn't want to break the flow of the architecture).
-![adding audio source component](/img/unity_wind_generated/add_audio_source.gif)
+
+{{< video src="/img/unity_wind_generated/add_audio_source.m4v" >}}
 
 If we test this out it should play white noise once the game is started.
-{{< video src="/img/unity_wind_generated/white_noise_on_game.mp4" class="white noise" >}}
+{{< video src="/img/unity_wind_generated/white_noise_on_game.m4v" poster="/img/unity_wind_generated/white_noise_on_game.png" >}}
 
 Next we want to make this more windy. Going to Window -> Audio -> Audio Mixer (or CTRL + 8) opens up the mixer. At first I found that the Master mixer that is added by default didn't let me link it to my audio source component so I deleted it and added a new one. Maybe it was alright with the default one, but I got impatient fast.
-![adding mixer](/img/unity_wind_generated/unity_mixer.gif)
+
+{{< video src="/img/unity_wind_generated/unity_mixer.m4v" >}}
 
 Now in the inspector let's add a lowpass, highpass filter and an EQ. Meddle a bit with parameters to find the sweet spot for the wind. Changing ParamEQ Centre freq parameter we can start to hear the gusts of wind. 
-![filters](/img/unity_wind_generated/filters_on_wind.gif)
+
+{{< video src="/img/unity_wind_generated/filters_on_wind.m4v" >}}
 
 This is the parameter that will be attached to the boat's speed. Right clicking it select the "Expose 'Centre freq' to script". And in the mixer menu top right name your parameter in "Exposed Parameters". This gives us control for the gust automation from scripts.
-![add exposed param](/img/unity_wind_generated/exposed_params.gif)
+
+{{< video src="/img/unity_wind_generated/exposed_params.m4v" >}}
 
 
 ## Coding the control
 
 Edvinas gave me a recommendation on making parameters easy configurable in Unity. All the parameters are made with serialized fields with `[SerializeField]`. This makes faster parameter changes when adding more game objects with the same script. 
-![serializedfield scripts](/img/unity_wind_generated/)
+![serializedfield scripts](/img/unity_wind_generated/serializable_fields.png)
 For making the frequency slider we just need to add a range parameter:
 ```C#
 		[SerializeField]
@@ -81,7 +85,7 @@ So. For the magical part:
 This is a bigger chunk to go through. Let us start with `AudioMixer` this creates an instance of Unity's audio mixer which will help us access the EQ parameters. `eqName` is the EQ parameter that we named in the exposed parameters. And `currentSpeed` is the parameter for the boat's speed. This was already done by Edvinas and I didn't do much digging for now into it, just used it for the parameter control. As for the method `SetWindFrequency` itself. Right now the max speed I could reach was about 120km/h. So that makes that the max frequency will be to 1200Hz. We use `masterMixer.SetFloat(eqName, frequency);` to get the parameter by name which is `Wind EQ` and set it's value. And the `Debug.Log` command is just to check what values have been passed on to confirm that it is working.
 
 # Results
-{{< video src="/img/unity_wind_generated/result_video.mp4" type="video/mp4">}}
+{{< video src="/img/unity_wind_generated/result_video.m4v" poster="/img/unity_wind_generated/result_video.png" >}}
 
 
 # Conclusion

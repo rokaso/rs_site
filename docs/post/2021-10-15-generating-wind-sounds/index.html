@@ -60,9 +60,9 @@ Generated Wind Effect I found this technique in one of Blipsounds video&rsquo;s 
   "headline": "Generating wind from a noise sample in a game engine",
   "description" : "In here I\u0026rsquo;ll be writing about how I added an interesting system of wind SFX in Unity by using white noise and Unity\u0026rsquo;s sound mixer effects. I\u0026rsquo;d call this a dynamic wind SFX even. Because right know this is directly linked with the boat\u0026rsquo;s speed velocity. As it goes faster the wind becomes more high pitched and when it is going slower the wind is more on the low-end.\nGenerated Wind Effect I found this technique in one of Blipsounds video\u0026rsquo;s by Ryan Stunkel.",
   "inLanguage" : "en",
-  "wordCount":  818 ,
-  "datePublished" : "2021-09-16T00:00:00",
-  "dateModified" : "2021-09-16T00:00:00",
+  "wordCount":  853 ,
+  "datePublished" : "2021-10-28T00:00:00",
+  "dateModified" : "2021-10-28T00:00:00",
   "image" : "https:\/\/sutkusaudio.com",
   "keywords" : [ "tools, unity, sfx" ],
   "mainEntityOfPage" : "https:\/\/sutkusaudio.com\/post\/2021-10-15-generating-wind-sounds\/",
@@ -221,10 +221,10 @@ Generated Wind Effect I found this technique in one of Blipsounds video&rsquo;s 
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on September 16, 2021
+  <i class="fas fa-calendar"></i>&nbsp;Posted on October 28, 2021
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;minutes
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;5&nbsp;minutes
   
   
   
@@ -250,21 +250,57 @@ Generated Wind Effect I found this technique in one of Blipsounds video&rsquo;s 
 <h1 id="generated-wind-effect">Generated Wind Effect</h1>
 <p>I found this technique in one of <a href="https://blipsounds.com/">Blipsounds</a> <a href="https://www.youtube.com/c/Blipsounds">video&rsquo;s</a> by Ryan Stunkel. The <a href="https://www.youtube.com/watch?v=Sq9ZnZr1Xqc">video</a> is about whooshes here but to make the wind effect you just need to automate the resonant frequency point to a certain range. Upon testing I found that from 300Hz to 1500Hz is a good range here. But this is due to adding high-pass and low-pass filters that also cut off some of the frequencies. The range to 1500Hz is just for some low volume texture. Previous testing held best results at 1000Hz without other filters. Going above it made it sound too synthetic.</p>
 <h2 id="preparing-the-engine">Preparing the engine</h2>
-<p>First we add the white noise sound into Unity. It is a good practice to add game objects for sounds when working with prefabs to have easy access when more of the same prefabs are generated into the engine. This will be more tidy and you&rsquo;ll have the sounds at hand. Will save time and nerves trying to find all the sound effects, trying to add them every time.
-<img src="/img/unity_wind_generated/add_object.gif" alt="adding sound">
-In the object we add a component &ldquo;Audio Source&rdquo; which we link the sound that will be played (Also, if you are trying to do this by yourself, don&rsquo;t forget to add an &ldquo;Audio Listener&rdquo; component. This was previously added, so I didn&rsquo;t want to break the flow of the architecture).
-<img src="/img/unity_wind_generated/add_audio_source.gif" alt="adding audio source component">
-If we test this out it should play white noise once the game is started.
-<img src="/img/unity_wind_generated/white_noise_on_game.mp4" alt="video test for white noise">
-Next we want to make this more windy. Going to Window -&gt; Audio -&gt; Audio Mixer (or CTRL + 8) opens up the mixer. At first I found that the Master mixer that is added by default didn&rsquo;t let me link it to my audio source component so I deleted it and added a new one. Maybe it was alright with the default one, but I got impatient fast.
-<img src="/img/unity_wind_generated/unity_mixer.gif" alt="adding mixer">
-Now in the inspector let&rsquo;s add a lowpass, highpass filter and an EQ. Meddle a bit with parameters to find the sweet spot for the wind. Changing ParamEQ Centre freq parameter we can start to hear the gusts of wind. 
-<img src="/img/unity_wind_generated/filters_on_wind.mp4" alt="filters">
-This is the parameter that will be attached to the boat&rsquo;s speed. Right clicking it select the &ldquo;Expose &lsquo;Centre freq&rsquo; to script&rdquo;. And in the mixer menu top right name your parameter in &ldquo;Exposed Parameters&rdquo;. This gives us control for the gust automation from scripts.
-<img src="/img/unity_wind_generated/exposed_params.mp4" alt="add exposed param"></p>
+<p>First we add the white noise sound into Unity. It is a good practice to add game objects for sounds when working with prefabs to have easy access when more of the same prefabs are generated into the engine. This will be more tidy and you&rsquo;ll have the sounds at hand. Will save time and nerves trying to find all the sound effects, trying to add them every time.</p>
+
+
+<video controls preload="metadata">
+  
+  
+  <source src="/img/unity_wind_generated/add_object.m4v#t=0.001" type="video/mp4">
+</video>
+<p>In the object we add a component &ldquo;Audio Source&rdquo; which we link the sound that will be played (Also, if you are trying to do this by yourself, don&rsquo;t forget to add an &ldquo;Audio Listener&rdquo; component. This was previously added, so I didn&rsquo;t want to break the flow of the architecture).</p>
+
+
+<video controls preload="metadata">
+  
+  
+  <source src="/img/unity_wind_generated/add_audio_source.m4v#t=0.001" type="video/mp4">
+</video>
+<p>If we test this out it should play white noise once the game is started.
+
+
+<video controls preload="metadata" poster="/img/unity_wind_generated/white_noise_on_game.png">
+  
+  
+  <source src="/img/unity_wind_generated/white_noise_on_game.m4v" type="video/mp4">
+</video></p>
+<p>Next we want to make this more windy. Going to Window -&gt; Audio -&gt; Audio Mixer (or CTRL + 8) opens up the mixer. At first I found that the Master mixer that is added by default didn&rsquo;t let me link it to my audio source component so I deleted it and added a new one. Maybe it was alright with the default one, but I got impatient fast.</p>
+
+
+<video controls preload="metadata">
+  
+  
+  <source src="/img/unity_wind_generated/unity_mixer.m4v#t=0.001" type="video/mp4">
+</video>
+<p>Now in the inspector let&rsquo;s add a lowpass, highpass filter and an EQ. Meddle a bit with parameters to find the sweet spot for the wind. Changing ParamEQ Centre freq parameter we can start to hear the gusts of wind.</p>
+
+
+<video controls preload="metadata">
+  
+  
+  <source src="/img/unity_wind_generated/filters_on_wind.m4v#t=0.001" type="video/mp4">
+</video>
+<p>This is the parameter that will be attached to the boat&rsquo;s speed. Right clicking it select the &ldquo;Expose &lsquo;Centre freq&rsquo; to script&rdquo;. And in the mixer menu top right name your parameter in &ldquo;Exposed Parameters&rdquo;. This gives us control for the gust automation from scripts.</p>
+
+
+<video controls preload="metadata">
+  
+  
+  <source src="/img/unity_wind_generated/exposed_params.m4v#t=0.001" type="video/mp4">
+</video>
 <h2 id="coding-the-control">Coding the control</h2>
 <p>Edvinas gave me a recommendation on making parameters easy configurable in Unity. All the parameters are made with serialized fields with <code>[SerializeField]</code>. This makes faster parameter changes when adding more game objects with the same script. 
-<img src="/img/unity_wind_generated/" alt="serializedfield scripts">
+<img src="/img/unity_wind_generated/serializable_fields.png" alt="serializedfield scripts">
 For making the frequency slider we just need to add a range parameter:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C#" data-lang="C#"><span style="color:#008080">		[SerializeField]</span>
 <span style="color:#008080">        [Range(0, 2000)]</span>
@@ -305,9 +341,15 @@ So. For the magical part:</p>
     }
 </code></pre></div><p>This is a bigger chunk to go through. Let us start with <code>AudioMixer</code> this creates an instance of Unity&rsquo;s audio mixer which will help us access the EQ parameters. <code>eqName</code> is the EQ parameter that we named in the exposed parameters. And <code>currentSpeed</code> is the parameter for the boat&rsquo;s speed. This was already done by Edvinas and I didn&rsquo;t do much digging for now into it, just used it for the parameter control. As for the method <code>SetWindFrequency</code> itself. Right now the max speed I could reach was about 120km/h. So that makes that the max frequency will be to 1200Hz. We use <code>masterMixer.SetFloat(eqName, frequency);</code> to get the parameter by name which is <code>Wind EQ</code> and set it&rsquo;s value. And the <code>Debug.Log</code> command is just to check what values have been passed on to confirm that it is working.</p>
 <h1 id="results">Results</h1>
-<p><img src="/img/unity_wind_generated/result_video.mp4" alt="results"></p>
+
+
+<video controls preload="metadata" poster="/img/unity_wind_generated/result_video.png">
+  
+  
+  <source src="/img/unity_wind_generated/result_video.m4v" type="video/mp4">
+</video>
 <h1 id="conclusion">Conclusion</h1>
-<p>Add an LFO automation to make the wind more unstable and quick shifting. Wait for wind development, add burės to it</p>
+<p>For now this is great. But this can be improved by adding an LFO to make short wind gusts while it is blowing just to make more audible motions. Also after the gusts being added there will be space to think about adding sail sounds. This I think will be done with a number of cloths.</p>
 
 
         

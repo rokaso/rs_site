@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>rokas@sutkusaudio.com (Rokas Sutkus)</managingEditor>
     <webMaster>rokas@sutkusaudio.com (Rokas Sutkus)</webMaster>
-    <lastBuildDate>Thu, 16 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sutkusaudio.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sutkusaudio.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Generating wind from a noise sample in a game engine</title>
+      <link>https://sutkusaudio.com/post/2021-10-15-generating-wind-sounds/</link>
+      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+      <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
+      <guid>https://sutkusaudio.com/post/2021-10-15-generating-wind-sounds/</guid>
+      <description>In here I&amp;rsquo;ll be writing about how I added an interesting system of wind SFX in Unity by using white noise and Unity&amp;rsquo;s sound mixer effects. I&amp;rsquo;d call this a dynamic wind SFX even. Because right know this is directly linked with the boat&amp;rsquo;s speed velocity. As it goes faster the wind becomes more high pitched and when it is going slower the wind is more on the low-end.
+Generated Wind Effect I found this technique in one of Blipsounds video&amp;rsquo;s by Ryan Stunkel.</description>
+    </item>
+    
     <item>
       <title>Neanderthal Tools Sample Pack</title>
       <link>https://sutkusaudio.com/post/2021-09-16-vr-neanderthal-tools-sample-pack/</link>
