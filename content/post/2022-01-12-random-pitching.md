@@ -1,7 +1,6 @@
 ---
 title: Random pitch changing for samples in Unity
 date: 2022-01-12
-draft: false
 tags: ["script", "unity", "sfx"]
 ---
 
