@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Random pitch changing for samples in Unity - Sutkus Audio</title>
+  <meta name="description" content="Doing sound design you find yourself that you have a good sample to add to the game, but the sample is so good that any other would not fit, but you need more variations so that it wouldn&rsquo;t fatigue the ears but just making a wee bit of pitch shifting and exporting it seems cheesy. Well now, what if we would do that in the game engine itself? Now that would be more stylish, wouldn&rsquo;t it?">
+  <meta name="author" content="Rokas Sutkus"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Sutkus Audio",
+    
+    "url": "https:\/\/sutkusaudio.com"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/sutkusaudio.com"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/sutkusaudio.com",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/sutkusaudio.com\/post\/2022-01-12-random-pitching\/",
+          "name": "Random pitch changing for samples in unity"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Rokas Sutkus"
+  },
+  "headline": "Random pitch changing for samples in Unity",
+  "description" : "Doing sound design you find yourself that you have a good sample to add to the game, but the sample is so good that any other would not fit, but you need more variations so that it wouldn\u0026rsquo;t fatigue the ears but just making a wee bit of pitch shifting and exporting it seems cheesy. Well now, what if we would do that in the game engine itself? Now that would be more stylish, wouldn\u0026rsquo;t it?",
+  "inLanguage" : "en",
+  "wordCount":  759 ,
+  "datePublished" : "2022-01-12T00:00:00",
+  "dateModified" : "2022-01-12T00:00:00",
+  "image" : "https:\/\/sutkusaudio.com",
+  "keywords" : [ "script, unity, sfx" ],
+  "mainEntityOfPage" : "https:\/\/sutkusaudio.com\/post\/2022-01-12-random-pitching\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/sutkusaudio.com",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/sutkusaudio.com",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Random pitch changing for samples in Unity" />
+<meta property="og:description" content="Doing sound design you find yourself that you have a good sample to add to the game, but the sample is so good that any other would not fit, but you need more variations so that it wouldn&rsquo;t fatigue the ears but just making a wee bit of pitch shifting and exporting it seems cheesy. Well now, what if we would do that in the game engine itself? Now that would be more stylish, wouldn&rsquo;t it?">
+<meta property="og:url" content="https://sutkusaudio.com/post/2022-01-12-random-pitching/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Sutkus Audio" />
+
+  <meta name="twitter:title" content="Random pitch changing for samples in Unity" />
+  <meta name="twitter:description" content="Doing sound design you find yourself that you have a good sample to add to the game, but the sample is so good that any other would not fit, but you need more variations so that it wouldn&rsquo;t …">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@eshkor101" />
+  <meta name="twitter:creator" content="@eshkor101" />
+  <meta name="generator" content="Hugo 0.80.0" />
+  <link rel="alternate" href="https://sutkusaudio.com/index.xml" type="application/rss+xml" title="Sutkus Audio"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://sutkusaudio.com/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://sutkusaudio.com/css/highlight.min.css" /><link rel="stylesheet" href="https://sutkusaudio.com/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://sutkusaudio.com">Sutkus Audio</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Main" href="/">Main</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>Random pitch changing for samples in Unity</h1>
+              
+              
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on January 12, 2022
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;minutes
+  
+  
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>Doing sound design you find yourself that you have a good sample to add to the game, but the sample is so good that any other would not fit, but you need more variations so that it wouldn&rsquo;t fatigue the ears but just making a wee bit of pitch shifting and exporting it seems cheesy. Well now, what if we would do that in the game engine itself? Now that would be more stylish, wouldn&rsquo;t it? This approach would save some memory. Let&rsquo;s see how this could be achieved in Unity.</p>
+<h1 id="the-script">The script</h1>
+<p>There will be two scripts used here. The first one is used to add a sample and a little bit of tuning. For it we will add a pitch and a volume parameter which can be controlled with a slider.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C#" data-lang="C#"><span style="font-weight:bold">public</span> <span style="font-weight:bold">class</span> <span style="color:#458;font-weight:bold">AudioPool</span>
+{
+    <span style="font-weight:bold">public</span> AudioClip clip;
+<span style="color:#008080">
+</span><span style="color:#008080">    [Range(0f, 1f)]</span>
+    <span style="font-weight:bold">public</span> <span style="color:#458;font-weight:bold">float</span> volume = <span style="color:#099">0.8f</span>;
+<span style="color:#008080">    [Range(0.1f, 3f)]</span>
+    <span style="font-weight:bold">public</span> <span style="color:#458;font-weight:bold">float</span> pitch = <span style="color:#099">1f</span>;
+<span style="color:#008080">
+</span><span style="color:#008080">    [HideInInspector]</span>
+    <span style="font-weight:bold">public</span> AudioSource source;
+}
+</code></pre></div><p>And for the second script. We will start with having a range in which the pitch will get changed. In Unity <code>1.0f</code> is the original sample pitch. Going lower than one will lower the pitch, and going higher than one will make the pitch higher. At <code>Start()</code> we initialize the sample and pass it&rsquo;s values.
+We&rsquo;ll also add the minimum and maximum value as sliders for in which range will the pitch randomization will happen.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C#" data-lang="C#"><span style="font-weight:bold">public</span> <span style="font-weight:bold">class</span> <span style="color:#458;font-weight:bold">AudioRandomPitch</span> : MonoBehaviour
+    {
+<span style="color:#008080">        [Range(0.1f, 3f)]</span>
+        <span style="font-weight:bold">public</span> <span style="color:#458;font-weight:bold">float</span> minimum = <span style="color:#099">0.1f</span>;
+<span style="color:#008080">        [Range(0.1f, 3f)]</span>
+        <span style="font-weight:bold">public</span> <span style="color:#458;font-weight:bold">float</span> maximum = <span style="color:#099">3f</span>;
+
+        <span style="font-weight:bold">public</span> AudioPool sound;
+        <span style="font-weight:bold">void</span> Start()
+        {
+            sound.source = gameObject.AddComponent&lt;AudioSource&gt;();
+            sound.source.clip = sound.clip;
+
+            sound.source.volume = sound.volume;
+            sound.source.pitch = sound.pitch;
+        }
+    }
+</code></pre></div><p>Now, for the range randomizing. Here we will add a <code>Play()</code> method. In it will be randomization begin. We will take the sample the we got initialized and add it here to <code>pool</code>. Pass the volume value that we set of the sample and get the pitch. <code>Random.Range(min, max)</code> is (as you can tell) for randomizing the values between minimum and maximum value. After it is calculated we play the source file with out pitch.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C#" data-lang="C#">    <span style="font-weight:bold">public</span> <span style="font-weight:bold">void</span> Play()
+    {
+        AudioPool pool = sound;
+        pool.source.volume = pool.volume;
+        pool.source.pitch = Random.Range(minimum, maximum);
+        pool.source.Play();
+    }
+</code></pre></div><p>The second script in full will look like this.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C#" data-lang="C#"><span style="font-weight:bold">public</span> <span style="font-weight:bold">class</span> <span style="color:#458;font-weight:bold">AudioRandomPitch</span> : MonoBehaviour
+    {
+<span style="color:#008080">        [Range(0.1f, 3f)]</span>
+        <span style="font-weight:bold">public</span> <span style="color:#458;font-weight:bold">float</span> minimum = <span style="color:#099">0.1f</span>;
+<span style="color:#008080">        [Range(0.1f, 3f)]</span>
+        <span style="font-weight:bold">public</span> <span style="color:#458;font-weight:bold">float</span> maximum = <span style="color:#099">3f</span>;
+
+        <span style="font-weight:bold">public</span> AudioPool sound;
+        <span style="font-weight:bold">void</span> Start()
+        {
+            sound.source = gameObject.AddComponent&lt;AudioSource&gt;();
+            sound.source.clip = sound.clip;
+
+            sound.source.volume = sound.volume;
+            sound.source.pitch = sound.pitch;
+            }
+
+        <span style="font-weight:bold">public</span> <span style="font-weight:bold">void</span> Play()
+        {
+            AudioPool pool = sound;
+            pool.source.volume = pool.volume;
+            pool.source.pitch = Random.Range(minimum, maximum);
+            pool.source.Play();
+        }
+    }
+</code></pre></div><p>The second script uses the first script for the audio. This is especially useful for when we will need to randomize samples instead of pitch. It takes the parameters of the audio and Unity Audio Emitter default settings and transfers to our object.</p>
+<p>This is how our script should look like when added to a game object.</p>
+<p><img src="/img/unity_pitch_random/second_script.png" alt="second script"></p>
+<h1 id="adding-the-sound">Adding the sound</h1>
+<p>Now we will be needing to add our sample. As in this game the orbs will be used a lot of times I&rsquo;ll be adding this into the prefab which allows us to add only one time and the rest of the orbs will be updated. As in my previous post lets add a game object called SFX and then another game object into it. Making it separate and not to get more confusing.</p>
+
+
+<video controls preload="metadata">
+  
+  
+  <source src="/img/unity_pitch_random/Object.m4v#t=0.001" type="video/mp4">
+</video>
+<p>And let&rsquo;s add our script to our Pick Up object and attach a sound to it.</p>
+
+
+<video controls preload="metadata">
+  
+  
+  <source src="/img/unity_pitch_random/Pitch_Random_Script.m4v#t=0.001" type="video/mp4">
+</video>
+<p>And add it to the event where it is picked up. This is also a script but done for the orbs on how they work - their mechanics. I won&rsquo;t go much into this script now. It&rsquo;s done using <a href="https://github.com/chark/scriptable-events">scriptable events</a> (which can be downloaded from github and there&rsquo;s a documentation if you want to learn to use it) made by my friend <a href="https://edvinas.dev/">Edvinas</a>. In here I just add a field where my sound will play after collecting the orb and select the function we added to our script.</p>
+
+
+<video controls preload="metadata">
+  
+  
+  <source src="/img/unity_pitch_random/Pitch_Play.m4v#t=0.001" type="video/mp4">
+</video>
+<h1 id="results">Results</h1>
+<p>Now when we play test what we&rsquo;ve done we should hear different pitches of the sample we added every time we pick up an orb.</p>
+
+
+<video controls preload="metadata">
+  
+  
+  <source src="/img/unity_pitch_random/result.m4v#t=0.001" type="video/mp4">
+</video>
+<h1 id="conclusion">Conclusion</h1>
+<p>Using pitch shifting can help us to make the sound scene more dynamic. Instead of listening to only the same sample we add pitch variation, which helps with ear fatigue.
+Also after showing this functionality I&rsquo;ve been suggested to make the pitch going up if in a certain time-frame if the orb is caught. Seems like an interesting functionality to do!</p>
+
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://sutkusaudio.com/tags/script/">script</a>&nbsp;
+            
+              <a href="https://sutkusaudio.com/tags/unity/">unity</a>&nbsp;
+            
+              <a href="https://sutkusaudio.com/tags/sfx/">sfx</a>&nbsp;
+            
+          </div>
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2fsutkusaudio.com%2fpost%2f2022-01-12-random-pitching%2f&amp;text=Random%20pitch%20changing%20for%20samples%20in%20Unity&amp;via=eshkor101" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsutkusaudio.com%2fpost%2f2022-01-12-random-pitching%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//reddit.com/submit?url=https%3a%2f%2fsutkusaudio.com%2fpost%2f2022-01-12-random-pitching%2f&amp;title=Random%20pitch%20changing%20for%20samples%20in%20Unity" target="_blank" title="Share on Reddit">
+          <i class="fab fa-reddit"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fsutkusaudio.com%2fpost%2f2022-01-12-random-pitching%2f&amp;title=Random%20pitch%20changing%20for%20samples%20in%20Unity" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fsutkusaudio.com%2fpost%2f2022-01-12-random-pitching%2f&amp;title=Random%20pitch%20changing%20for%20samples%20in%20Unity" target="_blank" title="Share on StumbleUpon">
+          <i class="fab fa-stumbleupon"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fsutkusaudio.com%2fpost%2f2022-01-12-random-pitching%2f&amp;description=Random%20pitch%20changing%20for%20samples%20in%20Unity" target="_blank" title="Share on Pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+
+              </div>
+            </section>
+        
+
+        
+          
+            
+          
+
+          
+                  <h4 class="see-also">See also</h4>
+                  <ul>
+                
+                
+                    <li><a href="/post/2021-10-15-generating-wind-sounds/">Generating wind from a noise sample in a game engine</a></li>
+                
+                    <li><a href="/post/2021-09-16-vr-neanderthal-tools-sample-pack/">Neanderthal Tools Sample Pack</a></li>
+                
+                    <li><a href="/post/2021-09-06-game-release/">Neanderthal tools is out!</a></li>
+                
+                    <li><a href="/post/2021-05-10-neanderthal-tool-sfx/">Recording audio for a VR application concerning Neanderthal legacy</a></li>
+                
+                    <li><a href="/post/2021-01-13-getting-started-with-fmod/">Getting started with FMOD in Unity</a></li>
+                
+              </ul>
+
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://sutkusaudio.com/post/2021-10-15-generating-wind-sounds/" data-toggle="tooltip" data-placement="top" title="Generating wind from a noise sample in a game engine">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:rokas@sutkusaudio.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/eshkor101" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/sutkusaudio" title="Instagram">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="sutkusaudio.com">Rokas Sutkus</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2022
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://sutkusaudio.com">Sutkus Audio</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://sutkusaudio.com/js/main.js"></script>
+<script src="https://sutkusaudio.com/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://sutkusaudio.com/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+

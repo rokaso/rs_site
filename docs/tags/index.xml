@@ -7,13 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>rokas@sutkusaudio.com (Rokas Sutkus)</managingEditor>
     <webMaster>rokas@sutkusaudio.com (Rokas Sutkus)</webMaster>
-    <lastBuildDate>Thu, 28 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sutkusaudio.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sutkusaudio.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>script</title>
+      <link>https://sutkusaudio.com/tags/script/</link>
+      <pubDate>Wed, 12 Jan 2022 00:00:00 +0000</pubDate>
+      <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
+      <guid>https://sutkusaudio.com/tags/script/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>sfx</title>
       <link>https://sutkusaudio.com/tags/sfx/</link>
-      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 12 Jan 2022 00:00:00 +0000</pubDate>
       <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
       <guid>https://sutkusaudio.com/tags/sfx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unity</title>
+      <link>https://sutkusaudio.com/tags/unity/</link>
+      <pubDate>Wed, 12 Jan 2022 00:00:00 +0000</pubDate>
+      <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
+      <guid>https://sutkusaudio.com/tags/unity/</guid>
       <description></description>
     </item>
     
@@ -23,15 +41,6 @@
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
       <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
       <guid>https://sutkusaudio.com/tags/tools/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>unity</title>
-      <link>https://sutkusaudio.com/tags/unity/</link>
-      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
-      <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
-      <guid>https://sutkusaudio.com/tags/unity/</guid>
       <description></description>
     </item>
     

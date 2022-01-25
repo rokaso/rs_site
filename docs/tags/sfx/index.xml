@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>rokas@sutkusaudio.com (Rokas Sutkus)</managingEditor>
     <webMaster>rokas@sutkusaudio.com (Rokas Sutkus)</webMaster>
-    <lastBuildDate>Thu, 28 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sutkusaudio.com/tags/sfx/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sutkusaudio.com/tags/sfx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Random pitch changing for samples in Unity</title>
+      <link>https://sutkusaudio.com/post/2022-01-12-random-pitching/</link>
+      <pubDate>Wed, 12 Jan 2022 00:00:00 +0000</pubDate>
+      <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
+      <guid>https://sutkusaudio.com/post/2022-01-12-random-pitching/</guid>
+      <description>Doing sound design you find yourself that you have a good sample to add to the game, but the sample is so good that any other would not fit, but you need more variations so that it wouldn&amp;rsquo;t fatigue the ears but just making a wee bit of pitch shifting and exporting it seems cheesy. Well now, what if we would do that in the game engine itself? Now that would be more stylish, wouldn&amp;rsquo;t it?</description>
+    </item>
+    
     <item>
       <title>Generating wind from a noise sample in a game engine</title>
       <link>https://sutkusaudio.com/post/2021-10-15-generating-wind-sounds/</link>
