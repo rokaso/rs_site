@@ -117,4 +117,4 @@ Now when we play test what we've done we should hear different pitches of the sa
 # Conclusion
 
 Using pitch shifting can help us to make the sound scene more dynamic. Instead of listening to only the same sample we add pitch variation, which helps with ear fatigue.
-Also after showing this functionality I've been suggested to make the pitch going up if in a certain time-frame if the orb is caught. Seems like an interesting functionality to do!
+Also after showing this functionality I've been suggested to make the pitch going up if in a certain time-frame the orb is caught. Seems like an interesting functionality to do!
