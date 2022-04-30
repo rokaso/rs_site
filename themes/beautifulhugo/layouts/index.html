@@ -1,0 +1,54 @@
+{{ define "main" }}
+  <div role="main" class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        {{ with .Content }}
+          <div class="well">
+            {{.}}
+          </div>
+        {{ end }}
+        
+<!-- This should be somewhere else? -->
+        <!--      <style>
+                  .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
+                  .embed-container iframe, 
+                  .embed-container object, 
+                  .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+              </style>
+              <div class='embed-container'>
+                <video src='/img/portfolio_1.webm?rel=0&cc_load_policy=1' frameborder='0' allowfullscreen></video>
+              </div>
+      -->
+
+        <video width="100%" height="100%" controls>
+          <source src="/img/portfolio_1.webm" type="video/webm">
+          Your browser does not support the video tag.
+        </video>
+
+        <!-- to here else-->
+        
+        <div class="posts-list">
+          {{ $pag := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+          {{ range $pag.Pages }}
+            {{ partial "post_preview" . }}
+          {{ end }}
+        </div>
+
+        {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
+          <ul class="pager main-pager">
+            {{ if .Paginator.HasPrev }}
+              <li class="previous">
+                <a href="{{ .Permalink }}page/{{ .Paginator.Prev.PageNumber }}/">&larr; {{ i18n "newerPosts" }}</a>
+              </li>
+            {{ end }}
+            {{ if .Paginator.HasNext }}
+              <li class="next">
+                <a href="{{ .Permalink }}page/{{ .Paginator.Next.PageNumber }}/">{{ i18n "olderPosts" }} &rarr;</a>
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+{{ end }}
