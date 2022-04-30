@@ -1,148 +1,90 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://sutkusaudio.com/</loc>
     <lastmod>2022-01-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/post/</loc>
     <lastmod>2022-01-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/post/2022-01-12-random-pitching/</loc>
     <lastmod>2022-01-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/tags/script/</loc>
     <lastmod>2022-01-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/tags/sfx/</loc>
     <lastmod>2022-01-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/tags/</loc>
     <lastmod>2022-01-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/tags/unity/</loc>
     <lastmod>2022-01-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/post/2021-10-15-generating-wind-sounds/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/tags/tools/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/post/2021-09-16-vr-neanderthal-tools-sample-pack/</loc>
     <lastmod>2021-09-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/tags/pack/</loc>
     <lastmod>2021-09-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/tags/sample/</loc>
     <lastmod>2021-09-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/tags/vr/</loc>
     <lastmod>2021-09-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/tags/game/</loc>
     <lastmod>2021-09-06T22:26:17+03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/tags/neaderthal/</loc>
     <lastmod>2021-09-06T22:26:17+03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/post/2021-09-06-game-release/</loc>
     <lastmod>2021-09-06T22:26:17+03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/tags/released/</loc>
     <lastmod>2021-09-06T22:26:17+03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/tags/anxiety/</loc>
     <lastmod>2021-09-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/post/2021-09-03-procrastination/</loc>
     <lastmod>2021-09-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/tags/perfection/</loc>
     <lastmod>2021-09-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/tags/procrastination/</loc>
     <lastmod>2021-09-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/tags/work/</loc>
     <lastmod>2021-09-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/post/2021-05-10-neanderthal-tool-sfx/</loc>
     <lastmod>2021-05-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/tags/fmod/</loc>
     <lastmod>2021-01-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/post/2021-01-13-getting-started-with-fmod/</loc>
     <lastmod>2021-01-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/tags/start/</loc>
     <lastmod>2021-01-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/page/about/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://sutkusaudio.com/page/</loc>
   </url>
-  
 </urlset>

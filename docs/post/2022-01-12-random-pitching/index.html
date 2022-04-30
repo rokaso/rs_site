@@ -89,7 +89,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@eshkor101" />
   <meta name="twitter:creator" content="@eshkor101" />
-  <meta name="generator" content="Hugo 0.80.0" />
+  <meta name="generator" content="Hugo 0.98.0" />
   <link rel="alternate" href="https://sutkusaudio.com/index.xml" type="application/rss+xml" title="Sutkus Audio"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://sutkusaudio.com/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
@@ -247,72 +247,72 @@
         <p>Doing sound design you find yourself that you have a good sample to add to the game, but the sample is so good that any other would not fit, but you need more variations so that it wouldn&rsquo;t fatigue the ears but just making a wee bit of pitch shifting and exporting it seems cheesy. Well now, what if we would do that in the game engine itself? Now that would be more stylish, wouldn&rsquo;t it? This approach would save some memory. Let&rsquo;s see how this could be achieved in Unity.</p>
 <h1 id="the-script">The script</h1>
 <p>There will be two scripts used here. The first one is used to add a sample and a little bit of tuning. For it we will add a pitch and a volume parameter which can be controlled with a slider.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C#" data-lang="C#"><span style="font-weight:bold">public</span> <span style="font-weight:bold">class</span> <span style="color:#458;font-weight:bold">AudioPool</span>
-{
-    <span style="font-weight:bold">public</span> AudioClip clip;
-<span style="color:#008080">
-</span><span style="color:#008080">    [Range(0f, 1f)]</span>
-    <span style="font-weight:bold">public</span> <span style="color:#458;font-weight:bold">float</span> volume = <span style="color:#099">0.8f</span>;
-<span style="color:#008080">    [Range(0.1f, 3f)]</span>
-    <span style="font-weight:bold">public</span> <span style="color:#458;font-weight:bold">float</span> pitch = <span style="color:#099">1f</span>;
-<span style="color:#008080">
-</span><span style="color:#008080">    [HideInInspector]</span>
-    <span style="font-weight:bold">public</span> AudioSource source;
-}
-</code></pre></div><p>And for the second script. We will start with having a range in which the pitch will get changed. In Unity <code>1.0f</code> is the original sample pitch. Going lower than one will lower the pitch, and going higher than one will make the pitch higher. At <code>Start()</code> we initialize the sample and pass it&rsquo;s values.
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C#" data-lang="C#"><span style="display:flex;"><span><span style="font-weight:bold">public</span> <span style="font-weight:bold">class</span> <span style="color:#458;font-weight:bold">AudioPool</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">public</span> AudioClip clip;
+</span></span><span style="display:flex;"><span><span style="color:#008080">
+</span></span></span><span style="display:flex;"><span><span style="color:#008080">    [Range(0f, 1f)]</span>
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">public</span> <span style="color:#458;font-weight:bold">float</span> volume = <span style="color:#099">0.8f</span>;
+</span></span><span style="display:flex;"><span><span style="color:#008080">    [Range(0.1f, 3f)]</span>
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">public</span> <span style="color:#458;font-weight:bold">float</span> pitch = <span style="color:#099">1f</span>;
+</span></span><span style="display:flex;"><span><span style="color:#008080">
+</span></span></span><span style="display:flex;"><span><span style="color:#008080">    [HideInInspector]</span>
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">public</span> AudioSource source;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>And for the second script. We will start with having a range in which the pitch will get changed. In Unity <code>1.0f</code> is the original sample pitch. Going lower than one will lower the pitch, and going higher than one will make the pitch higher. At <code>Start()</code> we initialize the sample and pass it&rsquo;s values.
 We&rsquo;ll also add the minimum and maximum value as sliders for in which range will the pitch randomization will happen.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C#" data-lang="C#"><span style="font-weight:bold">public</span> <span style="font-weight:bold">class</span> <span style="color:#458;font-weight:bold">AudioRandomPitch</span> : MonoBehaviour
-    {
-<span style="color:#008080">        [Range(0.1f, 3f)]</span>
-        <span style="font-weight:bold">public</span> <span style="color:#458;font-weight:bold">float</span> minimum = <span style="color:#099">0.1f</span>;
-<span style="color:#008080">        [Range(0.1f, 3f)]</span>
-        <span style="font-weight:bold">public</span> <span style="color:#458;font-weight:bold">float</span> maximum = <span style="color:#099">3f</span>;
-
-        <span style="font-weight:bold">public</span> AudioPool sound;
-        <span style="font-weight:bold">void</span> Start()
-        {
-            sound.source = gameObject.AddComponent&lt;AudioSource&gt;();
-            sound.source.clip = sound.clip;
-
-            sound.source.volume = sound.volume;
-            sound.source.pitch = sound.pitch;
-        }
-    }
-</code></pre></div><p>Now, for the range randomizing. Here we will add a <code>Play()</code> method. In it will be randomization begin. We will take the sample the we got initialized and add it here to <code>pool</code>. Pass the volume value that we set of the sample and get the pitch. <code>Random.Range(min, max)</code> is (as you can tell) for randomizing the values between minimum and maximum value. After it is calculated we play the source file with out pitch.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C#" data-lang="C#">    <span style="font-weight:bold">public</span> <span style="font-weight:bold">void</span> Play()
-    {
-        AudioPool pool = sound;
-        pool.source.volume = pool.volume;
-        pool.source.pitch = Random.Range(minimum, maximum);
-        pool.source.Play();
-    }
-</code></pre></div><p>The second script in full will look like this.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C#" data-lang="C#"><span style="font-weight:bold">public</span> <span style="font-weight:bold">class</span> <span style="color:#458;font-weight:bold">AudioRandomPitch</span> : MonoBehaviour
-    {
-<span style="color:#008080">        [Range(0.1f, 3f)]</span>
-        <span style="font-weight:bold">public</span> <span style="color:#458;font-weight:bold">float</span> minimum = <span style="color:#099">0.1f</span>;
-<span style="color:#008080">        [Range(0.1f, 3f)]</span>
-        <span style="font-weight:bold">public</span> <span style="color:#458;font-weight:bold">float</span> maximum = <span style="color:#099">3f</span>;
-
-        <span style="font-weight:bold">public</span> AudioPool sound;
-        <span style="font-weight:bold">void</span> Start()
-        {
-            sound.source = gameObject.AddComponent&lt;AudioSource&gt;();
-            sound.source.clip = sound.clip;
-
-            sound.source.volume = sound.volume;
-            sound.source.pitch = sound.pitch;
-            }
-
-        <span style="font-weight:bold">public</span> <span style="font-weight:bold">void</span> Play()
-        {
-            AudioPool pool = sound;
-            pool.source.volume = pool.volume;
-            pool.source.pitch = Random.Range(minimum, maximum);
-            pool.source.Play();
-        }
-    }
-</code></pre></div><p>The second script uses the first script for the audio. This is especially useful for when we will need to randomize samples instead of pitch. It takes the parameters of the audio and Unity Audio Emitter default settings and transfers to our object.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C#" data-lang="C#"><span style="display:flex;"><span><span style="font-weight:bold">public</span> <span style="font-weight:bold">class</span> <span style="color:#458;font-weight:bold">AudioRandomPitch</span> : MonoBehaviour
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span><span style="color:#008080">        [Range(0.1f, 3f)]</span>
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">public</span> <span style="color:#458;font-weight:bold">float</span> minimum = <span style="color:#099">0.1f</span>;
+</span></span><span style="display:flex;"><span><span style="color:#008080">        [Range(0.1f, 3f)]</span>
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">public</span> <span style="color:#458;font-weight:bold">float</span> maximum = <span style="color:#099">3f</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">public</span> AudioPool sound;
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">void</span> Start()
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            sound.source = gameObject.AddComponent&lt;AudioSource&gt;();
+</span></span><span style="display:flex;"><span>            sound.source.clip = sound.clip;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            sound.source.volume = sound.volume;
+</span></span><span style="display:flex;"><span>            sound.source.pitch = sound.pitch;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>Now, for the range randomizing. Here we will add a <code>Play()</code> method. In it will be randomization begin. We will take the sample the we got initialized and add it here to <code>pool</code>. Pass the volume value that we set of the sample and get the pitch. <code>Random.Range(min, max)</code> is (as you can tell) for randomizing the values between minimum and maximum value. After it is calculated we play the source file with out pitch.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C#" data-lang="C#"><span style="display:flex;"><span>    <span style="font-weight:bold">public</span> <span style="font-weight:bold">void</span> Play()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        AudioPool pool = sound;
+</span></span><span style="display:flex;"><span>        pool.source.volume = pool.volume;
+</span></span><span style="display:flex;"><span>        pool.source.pitch = Random.Range(minimum, maximum);
+</span></span><span style="display:flex;"><span>        pool.source.Play();
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>The second script in full will look like this.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C#" data-lang="C#"><span style="display:flex;"><span><span style="font-weight:bold">public</span> <span style="font-weight:bold">class</span> <span style="color:#458;font-weight:bold">AudioRandomPitch</span> : MonoBehaviour
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span><span style="color:#008080">        [Range(0.1f, 3f)]</span>
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">public</span> <span style="color:#458;font-weight:bold">float</span> minimum = <span style="color:#099">0.1f</span>;
+</span></span><span style="display:flex;"><span><span style="color:#008080">        [Range(0.1f, 3f)]</span>
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">public</span> <span style="color:#458;font-weight:bold">float</span> maximum = <span style="color:#099">3f</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">public</span> AudioPool sound;
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">void</span> Start()
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            sound.source = gameObject.AddComponent&lt;AudioSource&gt;();
+</span></span><span style="display:flex;"><span>            sound.source.clip = sound.clip;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            sound.source.volume = sound.volume;
+</span></span><span style="display:flex;"><span>            sound.source.pitch = sound.pitch;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">public</span> <span style="font-weight:bold">void</span> Play()
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            AudioPool pool = sound;
+</span></span><span style="display:flex;"><span>            pool.source.volume = pool.volume;
+</span></span><span style="display:flex;"><span>            pool.source.pitch = Random.Range(minimum, maximum);
+</span></span><span style="display:flex;"><span>            pool.source.Play();
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><p>The second script uses the first script for the audio. This is especially useful for when we will need to randomize samples instead of pitch. It takes the parameters of the audio and Unity Audio Emitter default settings and transfers to our object.</p>
 <p>This is how our script should look like when added to a game object.</p>
 <p><img src="/img/unity_pitch_random/second_script.png" alt="second script"></p>
 <h1 id="adding-the-sound">Adding the sound</h1>
