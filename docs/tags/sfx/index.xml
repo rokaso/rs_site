@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>rokas@sutkusaudio.com (Rokas Sutkus)</managingEditor>
     <webMaster>rokas@sutkusaudio.com (Rokas Sutkus)</webMaster>
-    <lastBuildDate>Wed, 12 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sutkusaudio.com/tags/sfx/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sutkusaudio.com/tags/sfx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using UE4 Hit Events in Blueprints</title>
+      <link>https://sutkusaudio.com/post/2022-09-04-ue4-bp-hit-events/</link>
+      <pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate>
+      <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
+      <guid>https://sutkusaudio.com/post/2022-09-04-ue4-bp-hit-events/</guid>
+      <description>Playing sounds on collision events is probably one of the most used event types in game audio. This can be by dropping an item on the ground, wall, table or bashing the item into other objects for example hitting a sword into a rock.
+Preparing the Component In the components tab we add a procedural mesh component by pressing on the Add Component button, scrolling to the rendering section and finding the Procedural Mesh component (or upon pressing just typing the name).</description>
+    </item>
+    
     <item>
       <title>Random pitch changing for samples in Unity</title>
       <link>https://sutkusaudio.com/post/2022-01-12-random-pitching/</link>

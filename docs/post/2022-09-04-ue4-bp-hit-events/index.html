@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Recording audio for a VR application concerning Neanderthal legacy - Sutkus Audio</title>
-  <meta name="description" content="The process we had from gathering sound to implementing into the game">
+  <title>Using UE4 Hit Events in Blueprints - Sutkus Audio</title>
+  <meta name="description" content="Generating log dropping sounds in UE4 with the blueprint system">
   <meta name="author" content="Rokas Sutkus"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -44,8 +44,8 @@
         "@type": "ListItem",
         "position": 3,
         "item": {
-          "@id": "https:\/\/sutkusaudio.com\/post\/2021-05-10-neanderthal-tool-sfx\/",
-          "name": "Recording audio for a vr application concerning neanderthal legacy"
+          "@id": "https:\/\/sutkusaudio.com\/post\/2022-09-04-ue4-bp-hit-events\/",
+          "name": "Using ue4 hit events in blueprints"
         }
     }]
 }
@@ -56,15 +56,15 @@
   "author": {
     "name" : "Rokas Sutkus"
   },
-  "headline": "Recording audio for a VR application concerning Neanderthal legacy",
-  "description" : "To get the best results one must be prepared in advanced to be able to get the most out of what he wants to accomplish. So here I\u0026rsquo;ll be writing the process I had with my friend Edvinas who is doing his masters thesis on interactive media in museums. A bit about the thesis is that they are researching on new ways to help museums convey history in modern day and that is by using VR.",
+  "headline": "Using UE4 Hit Events in Blueprints",
+  "description" : "Playing sounds on collision events is probably one of the most used event types in game audio. This can be by dropping an item on the ground, wall, table or bashing the item into other objects for example hitting a sword into a rock.\nPreparing the Component In the components tab we add a procedural mesh component by pressing on the Add Component button, scrolling to the rendering section and finding the Procedural Mesh component (or upon pressing just typing the name).",
   "inLanguage" : "en",
-  "wordCount":  747 ,
-  "datePublished" : "2021-05-10T00:00:00",
-  "dateModified" : "2021-05-10T00:00:00",
+  "wordCount":  697 ,
+  "datePublished" : "2022-09-04T00:00:00",
+  "dateModified" : "2022-09-04T00:00:00",
   "image" : "https:\/\/sutkusaudio.com",
-  "keywords" : [ "tools, unity, sfx, VR" ],
-  "mainEntityOfPage" : "https:\/\/sutkusaudio.com\/post\/2021-05-10-neanderthal-tool-sfx\/",
+  "keywords" : [ "ue4, unreal engine 4, sfx, VR, blueprints" ],
+  "mainEntityOfPage" : "https:\/\/sutkusaudio.com\/post\/2022-09-04-ue4-bp-hit-events\/",
   "publisher" : {
     "@type": "Organization",
     "name" : "https:\/\/sutkusaudio.com",
@@ -78,14 +78,14 @@
 }
 </script>
 
-<meta property="og:title" content="Recording audio for a VR application concerning Neanderthal legacy" />
-<meta property="og:description" content="The process we had from gathering sound to implementing into the game">
-<meta property="og:url" content="https://sutkusaudio.com/post/2021-05-10-neanderthal-tool-sfx/" />
+<meta property="og:title" content="Using UE4 Hit Events in Blueprints" />
+<meta property="og:description" content="Generating log dropping sounds in UE4 with the blueprint system">
+<meta property="og:url" content="https://sutkusaudio.com/post/2022-09-04-ue4-bp-hit-events/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Sutkus Audio" />
 
-  <meta name="twitter:title" content="Recording audio for a VR application concerning Neanderthal legacy" />
-  <meta name="twitter:description" content="The process we had from gathering sound to implementing into the game">
+  <meta name="twitter:title" content="Using UE4 Hit Events in Blueprints" />
+  <meta name="twitter:description" content="Generating log dropping sounds in UE4 with the blueprint system">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@eshkor101" />
   <meta name="twitter:creator" content="@eshkor101" />
@@ -211,19 +211,19 @@
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
               
-                <h1>Recording audio for a VR application concerning Neanderthal legacy</h1>
+                <h1>Using UE4 Hit Events in Blueprints</h1>
               
               
               
                 
-                  <h2 class="post-subheading">The process we had from gathering sound to implementing into the game</h2>
+                  <h2 class="post-subheading">Generating log dropping sounds in UE4 with the blueprint system</h2>
                 
               
               
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on May 10, 2021
+  <i class="fas fa-calendar"></i>&nbsp;Posted on September 4, 2022
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;minutes
@@ -248,98 +248,55 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <p>To get the best results one must be prepared in advanced to be able to get the most out of what he wants to accomplish. So here I&rsquo;ll be writing the process I had with my friend Edvinas who is doing his masters thesis on interactive media in museums. A bit about the thesis is that they are researching on new ways to help museums convey history in modern day and that is by using VR. They have been cooperating with Archaeological Museum in Zagreb to develop a small VR game about the neanderthals how they made their tools and what technology they used. The link to the game will be found in a later post as it is not yet made public.</p>
-<h3 id="researching">Researching</h3>
-<p>The very first thing that has needed to be done is sitting down and getting to know the specifics of how neanderthals worked, what they used and how they used it. So we talked. A lot of information was given as well as a simpler breakdown. At this stage I learned interesting things about how people in that time managed to survive, how they built things, how they lived. Yes there were things known that they used bones and flint for a lot of things, but interestingly enough what they used as glue to connect the stick with the sharp flint. I will not spoil the game here for anyone that hasn&rsquo;t played it yet.
-So yes we had to talk about the game vision, what the general feel should be, what is expected from a player, how to make it for the player more easily to comprehend what is happening and also to have in mind that we should not overwhelm the player. The first list of what sounds will be needed looked like this:</p>
-<ul>
-<li>Flint shattering/dropping</li>
-<li>Stone dropping</li>
-<li>Wood dropping</li>
-<li>Stone scraping</li>
-<li>Interactions</li>
-<li>Fire (idle burning and adding more wood to it)</li>
-<li>Ghost (idling as well as appearance/disappearance)</li>
-<li>Cave ambiance (windy feel, water droplets from time to time)</li>
-<li>Main menu ambiance</li>
-<li>Success action</li>
-<li>Footsteps</li>
-</ul>
-<p>Later on the list was expanded by boulder shattering sounds. Which is what can be noted. That what ever the agreed list is at the begining it can be expanded as testing ensues. It is a good thing to take into mind when figuring deadlines for yourself. Add fore thinking into the equation. You will definitely spend more time on the things that are unknown/never considered. But this comes with practice so no need to overthink it just to observe it and take into account when working on later projects.</p>
-<h3 id="gathering">Gathering</h3>
-<p>This is the stage that we <a href="https://www.instagram.com/p/CNIqkhknyMY/?utm_source=ig_web_copy_link">gathered all the sources</a> we thought were needed as source material before transferring to the DAW and editing them. We had to search for a lot of flint to make as much variations as possible for it so upon research we headed to the nearest river we had, which is also the biggest one in Lithuania.
-<img src="/img/post2/nemunas.png" alt="nemunas">
-As well as getting rocks to shatter the flint, some bark, sticks and anything else we thought that might add interesting texture.
-<img src="/img/post2/matts.png" alt="resources">
-And so the shattering, breaking and crunching begins!
-<img src="/img/post2/shatter.mp4" alt="shattering"></p>
-<p>No need to show here all the shattering and breaking. So instead lets listen to them!</p>
-<p><figure class="Footsteps">
-<audio controls preload="metadata">
-<source src="/img/post2/pedutes.wav" type="audio/mpeg">
+        <p>Playing sounds on collision events is probably one of the most used event types in game audio. This can be by dropping an item on the ground, wall, table or bashing the item into other objects for example hitting a sword into a rock.</p>
+<h3 id="preparing-the-component">Preparing the Component</h3>
+<p>In the components tab we add a procedural mesh component by pressing on the <code>Add Component</code> button, scrolling to the rendering section and finding the <code>Procedural Mesh</code> component (or upon pressing just typing the name).
+<img src="/img/ue_hit_events/add_component_procedural_mesh.png" alt="add_component_procedural_mesh"></p>
+<p>In the details of the <code>Procedural Mesh</code> component of which we created we find the <code>Collision</code> window and on it Collision tab. To make it work for events that we want to use the <code>Simulation Generates Hit Event</code> has to be on. More about his can be found <a href="https://docs.unrealengine.com/5.0/en-US/API/Runtime/Engine/Components/UPrimitiveComponent/OnComponentHit/">On Component Hit</a>.
+<img src="/img/ue_hit_events/object_collision.png" alt="object_collision"></p>
+<h3 id="the-events">The Events</h3>
+<p>To start of in the <code>Procedural Mesh</code> component we scroll down to the event tab and press the <code>+</code> button on <code>On Component Hit</code>. This generates us the start of the event function.
+<img src="/img/ue_hit_events/component_hit_event.png" alt="component_hit_event"></p>
+<p>And add our sound cue/asset that we want to play when the event is called. As I&rsquo;m working on a scene with wood chopping. I&rsquo;m going to add dropping sounds when the log is dropped on any type of surfaces. 
+<img src="/img/ue_hit_events/event_hit_sound_play.png" alt="event_hit_sound_play"></p>
+<p>And now we have a problem, for some reason the logs try to play a hundred of samples at the same time. I noticed when testing the functionality of this that sometimes the log that has fallen on the ground is still calling the sound cue. Adding prints with the magnitude of the impulse I found out that even lying on the ground it gave me an impulse of around 30 of the vectors length. While a simple small drop, like 2cm above the ground, had about 290 of the vectors length.</p>
+<p>So the logical approach is to add a threshold when the sound should be played and when not. By using a <code>Branch</code> statement and the <code>Vector Magnitude</code> calculator we can check if the magnitude is more than 250 or not. And if it is true we can play the sounds.
+<img src="/img/ue_hit_events/event_hit_sound_play_filtered.png" alt="event_hit_sound_play_filtered"></p>
+<p>To even go further I started to play with the Log sizes and it&rsquo;s mass. When the size of the log is increased or decreased the mass of it also changes respectively. If in the game an artist or developer will want to make the logs bigger, we&rsquo;ll hit into the same problem that there will be multiple hit events generating. And if the log is going to be smaller then there is a chance that it might not get the events generated. So we will be calculating the magnitude of the impact based on the mass.</p>
+<p>I did some testing with the sizes. And when the log is at a scale of 1. The minimum magnitude it generates is about 50 of the vectors length and the maximum is about 250 of the vectors length. So I&rsquo;ll be using these values for calculations.</p>
+<p><img src="/img/ue_hit_events/event_hit_with_mass_filtering.png" alt="event_hit_with_mass_filtering"></p>
+<p>Here I check if the values are in the range of the wanted magnitude which is multiplied by the mass of the logs. This makes it more easier to generate sounds based on the size. As the value of the mass changes, the algorithms range adapts to it. This is very useful when we are chopping the log with an axe. As each chop makes the log smaller, it&rsquo;s mass gets smaller.</p>
+<p>Next up what I wanted to do is to have more responsiveness with the worlds surfaces. I want to have sounds played on different surfaces like wood, ground, metal, water, ect.</p>
+<p>First of all we need to define the surface types that are there in the project itself.
+Go to Edit -&gt; Project Settings -&gt; Engine -&gt; Physics. Scrolling down there will be a list of <code>Physical Surfaces</code>.</p>
+<p><img src="/img/ue_hit_events/physical_surfaces.png" alt="physical_surfaces"></p>
+<p>Now we can add the check of the surface upon the hit events. For this we will use <code>Switch on EPhysicalSurface</code>. This allows us to play sounds based on which surface type has been called.</p>
+<p><img src="/img/ue_hit_events/switch_on_surfaces.png" alt="switch_on_surfaces"></p>
+<p>For now I just want to have a ground sound and a wood sound. Just to see how  it is working.</p>
+<p>And here is the result.</p>
 
-</audio>
-</figure>
-<figure class="Flint Shatter">
-<audio controls preload="metadata">
-<source src="/img/post2/titnago_shatter.wav" type="audio/mpeg">
 
-</audio>
-</figure>
-<figure class="titnago_skeveldros">
-<audio controls preload="metadata">
-<source src="/img/post2/titnago_skeveldros.wav" type="audio/mpeg">
-
-</audio>
-</figure>
-<figure class="titnagos_impact">
-<audio controls preload="metadata">
-<source src="/img/post2/titnagos_impact.wav" type="audio/mpeg">
-
-</audio>
-</figure>
-<figure class="trekst_krebzt">
-<audio controls preload="metadata">
-<source src="/img/post2/trekst_krebzt.wav" type="audio/mpeg">
-
-</audio>
-</figure></p>
-<h3 id="cleaning">Cleaning</h3>
-<p>And of course the file cleaning stage. The day was a bit windy and even though we went between the trees that the blow wouldn&rsquo;t go directly into the mic there were leave rustling throughout the files.
-<img src="/img/post2/rx.png" alt="rx">
-But that doesn&rsquo;t stop me from making the most of the files. Conveniently RX8 has a function called De-Rustle which help to remove the rustling sound from the files, of course that needs a few iterations to remove most of the unwanted sounds and to leave the wanted parts relatively untouched.
-<img src="/img/post2/derustle.png" alt="derustle"></p>
-<p>Here is an example with De-Wind function as I already had De-Rustled all the files.
-Firstly the original.
-<figure class="footstep_no_fx">
-<audio controls preload="metadata">
-<source src="/img/post2/footstep_no_fx.wav" type="audio/mpeg">
-
-</audio>
-</figure>
-And after the fx processing.
-<figure class="footstep_with_fx">
-<audio controls preload="metadata">
-<source src="/img/post2/footstep_with_fx.wav" type="audio/mpeg">
-
-</audio>
-</figure></p>
-<h3 id="implementing">Implementing</h3>
-<p>Well now. Sorry to disappoint for this stage. But I didn&rsquo;t implement any sounds to the game. It was on a very tight schedule so I let my friend handle all of them in Unity. From all the engine side I can show you the mixer settings used here as Edvinas mentioned this was a great way to divide sounds, not by sounds themselves but by the type of sounds.
-<img src="/img/post2/unity_mixer.png" alt="engine mixer"></p>
-<p>The game is not currently public. I&rsquo;ll keep you posted when the game has finally been made public so that everyone could try it out!</p>
+<video controls preload="metadata" poster="/img/ue_hit_events/result_video_ue4_event_hits.png">
+  
+  
+  <source src="/img/ue_hit_events/result_video_ue4_event_hits.m4v" type="video/mp4">
+</video>
+<h3 id="conclusion">Conclusion</h3>
+<p>s</p>
 
 
         
           <div class="blog-tags">
             
-              <a href="https://sutkusaudio.com/tags/tools/">tools</a>&nbsp;
+              <a href="https://sutkusaudio.com/tags/ue4/">ue4</a>&nbsp;
             
-              <a href="https://sutkusaudio.com/tags/unity/">unity</a>&nbsp;
+              <a href="https://sutkusaudio.com/tags/unreal-engine-4/">unreal engine 4</a>&nbsp;
             
               <a href="https://sutkusaudio.com/tags/sfx/">sfx</a>&nbsp;
             
               <a href="https://sutkusaudio.com/tags/vr/">VR</a>&nbsp;
+            
+              <a href="https://sutkusaudio.com/tags/blueprints/">blueprints</a>&nbsp;
             
           </div>
         
@@ -354,42 +311,42 @@ And after the fx processing.
     <ul class="share">
       
       <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2fsutkusaudio.com%2fpost%2f2021-05-10-neanderthal-tool-sfx%2f&amp;text=Recording%20audio%20for%20a%20VR%20application%20concerning%20Neanderthal%20legacy&amp;via=eshkor101" target="_blank" title="Share on Twitter">
+        <a href="//twitter.com/share?url=https%3a%2f%2fsutkusaudio.com%2fpost%2f2022-09-04-ue4-bp-hit-events%2f&amp;text=Using%20UE4%20Hit%20Events%20in%20Blueprints&amp;via=eshkor101" target="_blank" title="Share on Twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsutkusaudio.com%2fpost%2f2021-05-10-neanderthal-tool-sfx%2f" target="_blank" title="Share on Facebook">
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsutkusaudio.com%2fpost%2f2022-09-04-ue4-bp-hit-events%2f" target="_blank" title="Share on Facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//reddit.com/submit?url=https%3a%2f%2fsutkusaudio.com%2fpost%2f2021-05-10-neanderthal-tool-sfx%2f&amp;title=Recording%20audio%20for%20a%20VR%20application%20concerning%20Neanderthal%20legacy" target="_blank" title="Share on Reddit">
+        <a href="//reddit.com/submit?url=https%3a%2f%2fsutkusaudio.com%2fpost%2f2022-09-04-ue4-bp-hit-events%2f&amp;title=Using%20UE4%20Hit%20Events%20in%20Blueprints" target="_blank" title="Share on Reddit">
           <i class="fab fa-reddit"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fsutkusaudio.com%2fpost%2f2021-05-10-neanderthal-tool-sfx%2f&amp;title=Recording%20audio%20for%20a%20VR%20application%20concerning%20Neanderthal%20legacy" target="_blank" title="Share on LinkedIn">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fsutkusaudio.com%2fpost%2f2022-09-04-ue4-bp-hit-events%2f&amp;title=Using%20UE4%20Hit%20Events%20in%20Blueprints" target="_blank" title="Share on LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fsutkusaudio.com%2fpost%2f2021-05-10-neanderthal-tool-sfx%2f&amp;title=Recording%20audio%20for%20a%20VR%20application%20concerning%20Neanderthal%20legacy" target="_blank" title="Share on StumbleUpon">
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fsutkusaudio.com%2fpost%2f2022-09-04-ue4-bp-hit-events%2f&amp;title=Using%20UE4%20Hit%20Events%20in%20Blueprints" target="_blank" title="Share on StumbleUpon">
           <i class="fab fa-stumbleupon"></i>
         </a>
       </li>
   
       
       <li>
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fsutkusaudio.com%2fpost%2f2021-05-10-neanderthal-tool-sfx%2f&amp;description=Recording%20audio%20for%20a%20VR%20application%20concerning%20Neanderthal%20legacy" target="_blank" title="Share on Pinterest">
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fsutkusaudio.com%2fpost%2f2022-09-04-ue4-bp-hit-events%2f&amp;description=Using%20UE4%20Hit%20Events%20in%20Blueprints" target="_blank" title="Share on Pinterest">
           <i class="fab fa-pinterest"></i>
         </a>
       </li>
@@ -411,15 +368,13 @@ And after the fx processing.
                   <ul>
                 
                 
-                    <li><a href="/post/2022-09-04-ue4-bp-hit-events/">Using UE4 Hit Events in Blueprints</a></li>
-                
                     <li><a href="/post/2022-01-12-random-pitching/">Random pitch changing for samples in Unity</a></li>
                 
                     <li><a href="/post/2021-10-15-generating-wind-sounds/">Generating wind from a noise sample in a game engine</a></li>
                 
                     <li><a href="/post/2021-09-16-vr-neanderthal-tools-sample-pack/">Neanderthal Tools Sample Pack</a></li>
                 
-                    <li><a href="/post/2021-09-06-game-release/">Neanderthal tools is out!</a></li>
+                    <li><a href="/post/2021-05-10-neanderthal-tool-sfx/">Recording audio for a VR application concerning Neanderthal legacy</a></li>
                 
               </ul>
 
@@ -431,13 +386,9 @@ And after the fx processing.
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://sutkusaudio.com/post/2021-01-13-getting-started-with-fmod/" data-toggle="tooltip" data-placement="top" title="Getting started with FMOD in Unity">&larr; Previous Post</a>
+              <a href="https://sutkusaudio.com/post/2022-01-12-random-pitching/" data-toggle="tooltip" data-placement="top" title="Random pitch changing for samples in Unity">&larr; Previous Post</a>
             </li>
           
-          
-            <li class="next">
-              <a href="https://sutkusaudio.com/post/2021-09-03-procrastination/" data-toggle="tooltip" data-placement="top" title="Looking into procrastination in another way">Next Post &rarr;</a>
-            </li>
           
         </ul>
       
