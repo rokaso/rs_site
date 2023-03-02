@@ -1,6 +1,6 @@
 ---
 title: "Rooted Warden - Global Game Jam 2023"
-subtitle: "The making of audio in Rooted Waredn with FMOD"
+subtitle: "The making of audio in Rooted Warden with FMOD"
 date: 2023-03-02
 tags: ["Unity", "Global Game Jam", "sfx", "VR", "FMOD"]
 ---
