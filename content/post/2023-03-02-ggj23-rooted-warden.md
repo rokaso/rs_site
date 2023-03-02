@@ -65,7 +65,7 @@ Here is an example of how this works
 {{< video src="/img/ggj23_rooted_warden/fmod_music_intensity.m4v" poster="/img/ggj23_rooted_warden/fmod_music_intensity.png" >}}
 
 ## Last touches
-Well I finished with the music past 2AM and got home at about 3AM. Others stayed for longer. Edvinas who entered beast mode, stayed there until 7AM. At the venue we discussed that he will probably won't come until the submission time is over, but at about 9-10AM he wrote that he will be there in 30min. And so we continued. Airidas made the amazing core through the night so I supplemented it with a sound effects.
+Well I finished with the music past 2AM and got home at about 3AM. Others stayed for longer. Edvinas who entered beast mode, stayed there until 7AM. At the venue we discussed that he will probably won't come until the submission time is over, but at about 9-10AM he wrote that he will be there in 30min. And so we continued. Airidas made the amazing core through the night so I supplemented it with a sound effect.
 
 At this point it was time to work with UI, so the click sound was added and the snapshot event created. It is amazing how easy it is to use snapshots. They are called the same way as any audio event is called from FMOD. I added a multi-band EQ and lowered the volume sounds to all the music and SFX except for the UI elements. So on entering the menu it lowers the volume and adds a low-pass filter and exiting the menu it goes back to normal. The bug that I made is that I placed the FMOD event emitter by accident on the UI prefab itself and it always called it when anything was happening with UI. So even if I turn off the menu it turns the snapshot back on again. Took me a while, but I finally found it, deleted it and it was working as intended.
 
