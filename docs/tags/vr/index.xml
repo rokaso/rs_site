@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>rokas@sutkusaudio.com (Rokas Sutkus)</managingEditor>
     <webMaster>rokas@sutkusaudio.com (Rokas Sutkus)</webMaster>
-    <lastBuildDate>Sun, 04 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://sutkusaudio.com/tags/vr/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sutkusaudio.com/tags/vr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rooted Warden - Global Game Jam 2023</title>
+      <link>https://sutkusaudio.com/post/2023-03-02-ggj23-rooted-warden/</link>
+      <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+      <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
+      <guid>https://sutkusaudio.com/post/2023-03-02-ggj23-rooted-warden/</guid>
+      <description>The Global Game Jam 2023 took place on February 3-5. As you all know, this event brings together developers, designers, artists, and creative thinkers from around the world to collaborate, share ideas, and build new and innovative games in just one weekend. I attended it in Kaunas, Lithuania which is organized by LŽKA and the website of the event can be found here. This years art was done by an amazing artist - Teresė Žvinakevičiūtė.</description>
+    </item>
+    
     <item>
       <title>Using UE4 Hit Events in Blueprints</title>
       <link>https://sutkusaudio.com/post/2022-09-04-ue4-bp-hit-events/</link>

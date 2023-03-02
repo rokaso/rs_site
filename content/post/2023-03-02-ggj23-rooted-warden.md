@@ -1,23 +1,22 @@
 ---
 title: "Rooted Warden - Global Game Jam 2023"
 subtitle: "The making of audio in Rooted Waredn with FMOD"
-date: 2023-03-01
-draft: true
+date: 2023-03-02
 tags: ["Unity", "Global Game Jam", "sfx", "VR", "FMOD"]
 ---
 
-The Global Game Jam 2023 took place on February 3-5. As you all know, this event brings together developers, designers, artists, and creative thinkers from around the world to collaborate, share ideas, and build new and innovative games in just one weekend. I attended it in Kaunas, Lithuania which is organized by [LŽKA]() and the website of the event can be found [here](https://www.gamejam.lt/). This years art was done by an amazing artist - [Teresė Žvinakevičiūtė](https://www.instagram.com/teresesutkus/).
+The Global Game Jam 2023 took place on February 3-5. As you all know, this event brings together developers, designers, artists, and creative thinkers from around the world to collaborate, share ideas, and build new and innovative games in just one weekend. I attended it in Kaunas, Lithuania which is organized by [LŽKA](https://www.lzka.lt/) and the website of the event can be found [here](https://www.gamejam.lt/). This years art was done by an amazing artist - [Teresė Žvinakevičiūtė](https://www.instagram.com/teresesutkus/).
 
 This years topic was - Roots. And so we are proud to deliver the game that we worked on through the weekend - [Rooted Warden](https://github.com/ugnelis/moon-gale). It's about an armour without a knight that has to protect it's core from blobs that are spawning towards the center. With passing time the intensity level gets higher and becomes much harder to survive. So, how did we do it?
 
 # The Team
 I want to start with the people that worked on this project. This project was a collaboration of two studios - [Chark](https://chark.io/) and [Moonleaf studio](https://moonleafstudio.com/). The team consisted of 7 very talented people (only six faces in the photo, Vaidas got sick and helped us remotely when he could). Left to right:
 - [Edvinas](https://edvinas.dev/) - developer
-- Ugnius - developer
+- [Ugnius](https://github.com/ugnelis/) - developer
 - Me - audio
 - [Gantas](https://www.artstation.com/gcolde) - 3D artist, shaders
 - Miglė - lead artist
-- Airidas - developer, VFX artist
+- [Airidas](https://www.artstation.com/shorte) - developer, VFX artist
 - Vaidas (remote) - producer
 ![the team](/img/ggj23_rooted_warden/moon_gale_team.jpg)
 
@@ -47,8 +46,9 @@ A lot of sounds were used from libraries. Some collected by me, but most of them
 - Slime appear {{< sound src="/img/ggj23_rooted_warden/E_Slime_Appear_02.mp3" class="E_Slime_Appear_02" >}}
 - Player dashing {{< sound src="/img/ggj23_rooted_warden/P_Dash_03.mp3" class="P_Dash_03" >}}
 - Attack whoosh {{< sound src="/img/ggj23_rooted_warden/P_Attack_whoosh_03.mp3" class="P_Attack_whoosh_03" >}}
+
 ## Music
-Saturday was very productive, but the evening was coming to it's end. The venue this day is closing at 9PM. We had to leave the museum and we already had a backup plan for this. Edvinas and Ugnius have an office 15min on foot from the place. We relocated there and started to work more hyped. I wasn't very keen on making music for this game, as with music I am more critical to myself. Also I don't produce music that often for games, I do live events with my `Novation Circuit`, but I don't put them in the same category. I was afraid that making a track isn't possible in a few days and here we are left with a few hours. But it had to be done, so I opened `Arturia Pigments` and `Vital`. 
+Saturday was very productive, but the evening was coming to it's end. The venue this day is closing at 9PM. We had to leave the museum and we already had a backup plan for this. [Chark](https://chark.io/) office is 15min on foot from the place. We relocated there and started to work more hyped. I wasn't very keen on making music for this game, as with music I am more critical to myself. Also I don't produce music that often for games, I do live events with my `Novation Circuit`, but I don't put them in the same category. I was afraid that making a track isn't possible in a few days and here we are left with a few hours. But it had to be done, so I opened `Arturia Pigments` and `Vital`. 
 {{< sound src="/img/ggj23_rooted_warden/Music_amb_Arpegiated_Loop_1.mp3" class="Music_amb_Arpegiated_Loop_1" >}}
 {{< sound src="/img/ggj23_rooted_warden/Music_amb_Omnious_Loop_1.mp3" class="Music_amb_Omnious_Loop_1" >}}
 {{< sound src="/img/ggj23_rooted_warden/Music_amb_Random_Sequencer_1.mp3" class="Music_amb_Random_Sequencer_1" >}}
@@ -65,7 +65,7 @@ Here is an example of how this works
 {{< video src="/img/ggj23_rooted_warden/fmod_music_intensity.m4v" poster="/img/ggj23_rooted_warden/fmod_music_intensity.png" >}}
 
 ## Last touches
-Well I finished with the music past 2AM and got home at about 3AM. Others stayed for longer. Edvinas who entered beast mode, stayed there until 7AM. At the venue we discussed that he will probably won't come until the submission time is over, but at about 9-10AM he wrote that he will be there in 30min. And so we continued. Aivaras made the amazing core through the night so I supplemented with a sound effect.
+Well I finished with the music past 2AM and got home at about 3AM. Others stayed for longer. Edvinas who entered beast mode, stayed there until 7AM. At the venue we discussed that he will probably won't come until the submission time is over, but at about 9-10AM he wrote that he will be there in 30min. And so we continued. Airidas made the amazing core through the night so I supplemented it with a sound effects.
 
 At this point it was time to work with UI, so the click sound was added and the snapshot event created. It is amazing how easy it is to use snapshots. They are called the same way as any audio event is called from FMOD. I added a multi-band EQ and lowered the volume sounds to all the music and SFX except for the UI elements. So on entering the menu it lowers the volume and adds a low-pass filter and exiting the menu it goes back to normal. The bug that I made is that I placed the FMOD event emitter by accident on the UI prefab itself and it always called it when anything was happening with UI. So even if I turn off the menu it turns the snapshot back on again. Took me a while, but I finally found it, deleted it and it was working as intended.
 
