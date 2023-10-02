@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>rokas@sutkusaudio.com (Rokas Sutkus)</managingEditor>
     <webMaster>rokas@sutkusaudio.com (Rokas Sutkus)</webMaster>
-    <lastBuildDate>Thu, 02 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sutkusaudio.com/tags/fmod/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Oct 2023 13:20:50 +0300</lastBuildDate><atom:link href="https://sutkusaudio.com/tags/fmod/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exergale: audio in game</title>
+      <link>https://sutkusaudio.com/post/2023-10-02-exergale-audio-pt1/</link>
+      <pubDate>Mon, 02 Oct 2023 13:20:50 +0300</pubDate>
+      <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
+      <guid>https://sutkusaudio.com/post/2023-10-02-exergale-audio-pt1/</guid>
+      <description>This year, I&amp;rsquo;ve been neck-deep in two projects, putting in loads of work, and truth be told, it&amp;rsquo;s been so hectic that I&amp;rsquo;ve neglected this blog for quite a while. But hey, better late than never, right?
+Let me tell you about one of those projects, ExerGale, a VR game that&amp;rsquo;s all about flying, gliding, and climbing through a fantastic world. Right now, the game offers two modes: one where you can just soar around like a bird, and another where you hit a button and go on a crystal-collecting spree to rack up a high score.</description>
+    </item>
+    
     <item>
       <title>Rooted Warden - Global Game Jam 2023</title>
       <link>https://sutkusaudio.com/post/2023-03-02-ggj23-rooted-warden/</link>

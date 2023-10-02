@@ -7,13 +7,58 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>rokas@sutkusaudio.com (Rokas Sutkus)</managingEditor>
     <webMaster>rokas@sutkusaudio.com (Rokas Sutkus)</webMaster>
-    <lastBuildDate>Thu, 02 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://sutkusaudio.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Oct 2023 13:20:50 +0300</lastBuildDate><atom:link href="https://sutkusaudio.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chark</title>
+      <link>https://sutkusaudio.com/tags/chark/</link>
+      <pubDate>Mon, 02 Oct 2023 13:20:50 +0300</pubDate>
+      <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
+      <guid>https://sutkusaudio.com/tags/chark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ExerGale</title>
+      <link>https://sutkusaudio.com/tags/exergale/</link>
+      <pubDate>Mon, 02 Oct 2023 13:20:50 +0300</pubDate>
+      <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
+      <guid>https://sutkusaudio.com/tags/exergale/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>fmod</title>
       <link>https://sutkusaudio.com/tags/fmod/</link>
-      <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 02 Oct 2023 13:20:50 +0300</pubDate>
       <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
       <guid>https://sutkusaudio.com/tags/fmod/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sfx</title>
+      <link>https://sutkusaudio.com/tags/sfx/</link>
+      <pubDate>Mon, 02 Oct 2023 13:20:50 +0300</pubDate>
+      <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
+      <guid>https://sutkusaudio.com/tags/sfx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unity</title>
+      <link>https://sutkusaudio.com/tags/unity/</link>
+      <pubDate>Mon, 02 Oct 2023 13:20:50 +0300</pubDate>
+      <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
+      <guid>https://sutkusaudio.com/tags/unity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VR</title>
+      <link>https://sutkusaudio.com/tags/vr/</link>
+      <pubDate>Mon, 02 Oct 2023 13:20:50 +0300</pubDate>
+      <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
+      <guid>https://sutkusaudio.com/tags/vr/</guid>
       <description></description>
     </item>
     
@@ -23,33 +68,6 @@
       <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
       <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
       <guid>https://sutkusaudio.com/tags/global-game-jam/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sfx</title>
-      <link>https://sutkusaudio.com/tags/sfx/</link>
-      <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
-      <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
-      <guid>https://sutkusaudio.com/tags/sfx/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>unity</title>
-      <link>https://sutkusaudio.com/tags/unity/</link>
-      <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
-      <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
-      <guid>https://sutkusaudio.com/tags/unity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>VR</title>
-      <link>https://sutkusaudio.com/tags/vr/</link>
-      <pubDate>Thu, 02 Mar 2023 00:00:00 +0000</pubDate>
-      <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
-      <guid>https://sutkusaudio.com/tags/vr/</guid>
       <description></description>
     </item>
     

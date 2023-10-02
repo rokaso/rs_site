@@ -3,31 +3,40 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://sutkusaudio.com/</loc>
-    <lastmod>2023-03-02T00:00:00+00:00</lastmod>
+    <lastmod>2023-10-02T13:20:50+03:00</lastmod>
     <priority>0</priority>
   </url><url>
+    <loc>https://sutkusaudio.com/tags/chark/</loc>
+    <lastmod>2023-10-02T13:20:50+03:00</lastmod>
+  </url><url>
+    <loc>https://sutkusaudio.com/tags/exergale/</loc>
+    <lastmod>2023-10-02T13:20:50+03:00</lastmod>
+  </url><url>
+    <loc>https://sutkusaudio.com/post/2023-10-02-exergale-audio-pt1/</loc>
+    <lastmod>2023-10-02T13:20:50+03:00</lastmod>
+  </url><url>
     <loc>https://sutkusaudio.com/tags/fmod/</loc>
-    <lastmod>2023-03-02T00:00:00+00:00</lastmod>
+    <lastmod>2023-10-02T13:20:50+03:00</lastmod>
+  </url><url>
+    <loc>https://sutkusaudio.com/post/</loc>
+    <lastmod>2023-10-02T13:20:50+03:00</lastmod>
+  </url><url>
+    <loc>https://sutkusaudio.com/tags/sfx/</loc>
+    <lastmod>2023-10-02T13:20:50+03:00</lastmod>
+  </url><url>
+    <loc>https://sutkusaudio.com/tags/</loc>
+    <lastmod>2023-10-02T13:20:50+03:00</lastmod>
+  </url><url>
+    <loc>https://sutkusaudio.com/tags/unity/</loc>
+    <lastmod>2023-10-02T13:20:50+03:00</lastmod>
+  </url><url>
+    <loc>https://sutkusaudio.com/tags/vr/</loc>
+    <lastmod>2023-10-02T13:20:50+03:00</lastmod>
   </url><url>
     <loc>https://sutkusaudio.com/tags/global-game-jam/</loc>
     <lastmod>2023-03-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sutkusaudio.com/post/</loc>
-    <lastmod>2023-03-02T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://sutkusaudio.com/post/2023-03-02-ggj23-rooted-warden/</loc>
-    <lastmod>2023-03-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sutkusaudio.com/tags/sfx/</loc>
-    <lastmod>2023-03-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sutkusaudio.com/tags/</loc>
-    <lastmod>2023-03-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sutkusaudio.com/tags/unity/</loc>
-    <lastmod>2023-03-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sutkusaudio.com/tags/vr/</loc>
     <lastmod>2023-03-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sutkusaudio.com/tags/blueprints/</loc>
