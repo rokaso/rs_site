@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Project setup for better workflow on Unveiling - Sutkus Audio</title>
+  <meta name="description" content="My process and workflow of audio creation and implementation for the game Unveiling ">
+  <meta name="author" content="Rokas Sutkus"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Sutkus Audio",
+    
+    "url": "https:\/\/sutkusaudio.com"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/sutkusaudio.com"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/sutkusaudio.com",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/sutkusaudio.com\/post\/2024-01-09-unveiling-project-setup\/",
+          "name": "Project setup for better workflow on unveiling"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Rokas Sutkus"
+  },
+  "headline": "Project setup for better workflow on Unveiling",
+  "description" : "Before diving into a project, I believe that a crucial step is to plan the workflow that will guide the entire process. It\u0026rsquo;s essential to develop a structured approach and stick to it. To streamline my work, I\u0026rsquo;ve considered optimizing my use of Reaper and FMOD.\nWhen working with Reaper, I find that naming conventions are crucial for understanding and efficiently handling files after rendering. As for FMOD events, I use a similar naming system to the asset files.",
+  "inLanguage" : "en",
+  "wordCount":  1231 ,
+  "datePublished" : "2024-01-09T15:20:50",
+  "dateModified" : "2024-01-09T15:20:50",
+  "image" : "https:\/\/sutkusaudio.com",
+  "keywords" : [ "Unveiling, sfx, FMOD, Chark, Reaper" ],
+  "mainEntityOfPage" : "https:\/\/sutkusaudio.com\/post\/2024-01-09-unveiling-project-setup\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/sutkusaudio.com",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/sutkusaudio.com",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Project setup for better workflow on Unveiling" />
+<meta property="og:description" content="My process and workflow of audio creation and implementation for the game Unveiling ">
+<meta property="og:url" content="https://sutkusaudio.com/post/2024-01-09-unveiling-project-setup/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Sutkus Audio" />
+
+  <meta name="twitter:title" content="Project setup for better workflow on Unveiling" />
+  <meta name="twitter:description" content="My process and workflow of audio creation and implementation for the game Unveiling ">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@eshkor101" />
+  <meta name="twitter:creator" content="@eshkor101" />
+  <meta name="generator" content="Hugo 0.98.0" />
+  <link rel="alternate" href="https://sutkusaudio.com/index.xml" type="application/rss+xml" title="Sutkus Audio"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://sutkusaudio.com/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://sutkusaudio.com/css/highlight.min.css" /><link rel="stylesheet" href="https://sutkusaudio.com/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://sutkusaudio.com">Sutkus Audio</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Main" href="/">Main</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>Project setup for better workflow on Unveiling</h1>
+              
+              
+              
+                
+                  <h2 class="post-subheading">My process and workflow of audio creation and implementation for the game Unveiling </h2>
+                
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on January 9, 2024
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;6&nbsp;minutes
+  
+  
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>Before diving into a project, I believe that a crucial step is to plan the workflow that will guide the entire process. It&rsquo;s essential to develop a structured approach and stick to it. To streamline my work, I&rsquo;ve considered optimizing my use of <a href="https://www.reaper.fm/">Reaper</a> and <a href="https://www.fmod.com/">FMOD</a>.</p>
+<p>When working with <strong>Reaper</strong>, I find that naming conventions are crucial for understanding and efficiently handling files after rendering. As for <strong>FMOD</strong> events, I use a similar naming system to the asset files. However, importing files into <strong>FMOD</strong> was a bit tedious for me initially.</p>
+<p>I explored the integration <strong>FMOD</strong> has with <strong>Reaper</strong>, but I&rsquo;ll discuss that later. As the saying goes, a good workflow is half the job done, right?</p>
+<h1 id="reaper-setup">Reaper setup</h1>
+<p>The primary objective here is to establish a workflow for both asset files and projects. I&rsquo;ll focus on two critical steps that are currently of utmost importance to me: naming conventions and project organization.</p>
+<p>Firstly, let&rsquo;s delve into the significance of a consistent naming convention. This aspect is vital for clarity and efficiency, ensuring that asset files are easily understandable and manageable. A well-thought-out naming system can significantly enhance the overall organization and accessibility of the files. I had issues with this, because I wrote a misleading title, that tooks like a half an hour of chatter just of this. My mistake!</p>
+<p>Next, I want to highlight the importance of structuring projects effectively. Organizing projects systematically is key to a streamlined workflow. By implementing a logical project structure, it becomes easier to navigate through files, collaborate with others, and maintain an easy development process.</p>
+<p>These two aspects, naming conventions and project organization, play a pivotal role in setting up an effective workflow for asset files and projects alike.</p>
+<h2 id="naming-convention">Naming convention</h2>
+<p>At first I had come up with the naming system here. I made them into three different groups:</p>
+<ul>
+<li>Music</li>
+<li>Sound Effects</li>
+<li>Voice Overs</li>
+</ul>
+<p>So, this is where I start building my groups. It comes in handy down the line when I&rsquo;m mixing in the middleware. As I go forward, I break them into sub-groups, and those have their own sub-groups, and so on. It&rsquo;s all about making sure I can find exactly what I need without getting lost in a ton of events.</p>
+<p>For music I know that there wouldn&rsquo;t be much of it so it got divided into two parts:</p>
+<ul>
+<li>Drones</li>
+<li>General</li>
+</ul>
+<p>Same as for the voice overs, there are two types of voices:</p>
+<ul>
+<li>NHI (non human intelligence)</li>
+<li>Player</li>
+</ul>
+<p>The player doesn&rsquo;t have voice lines, but only breathing sounds, but still I wanted to extract it from others for mastering purposes and in the end it didn&rsquo;t seem logical to add it as SFX. As for the NHI, there was a lot of the samples - around 250 individual samples. They were grouped by the level that they are going to be used in:</p>
+<ul>
+<li>Forest</li>
+<li>Desert</li>
+<li>Pyramids</li>
+<li>Museum</li>
+<li>Simulation</li>
+</ul>
+<p>And then comes the biggest part - SFX. These are going to be the biggest part of all of the audio. I grouped them into:
+- Ambient
+- Player
+- General
+- Interactable
+- Museum
+- NHI
+- UI</p>
+<p>As for the naming, I used a system that maybe not be that understandable at first sight, but it&rsquo;s easier for me:</p>
+<ul>
+<li>M_ - main group type for music
+<ul>
+<li>Dr_ - drones for the sub group type</li>
+<li>Ge_ general for the sub group type</li>
+</ul>
+</li>
+<li>S_ - main group type for SFX
+<ul>
+<li>Am_ - ambience</li>
+<li>Pl_ - player</li>
+<li>Ge_ - general</li>
+<li>In_ - interactable</li>
+<li>Mu_ - museum</li>
+<li>Nh_ - NHI</li>
+<li>Ui_ - UI</li>
+</ul>
+</li>
+<li>V_ main group type for VO
+<ul>
+<li>En_ - for the entity</li>
+<li>Pl_ - for the player</li>
+</ul>
+</li>
+</ul>
+<p>Later on, I considered adding another layer of abbreviations for SFX names. For instance, for the player&rsquo;s sub-groups like Impacts, Footsteps, Jumps, etc., I name them accordingly:</p>
+<ul>
+<li>S_PlIm_Concrete - this would mean that it is a <code>SFX</code> oriented on the <code>Player</code> and specifically <code>Impacts</code>.</li>
+<li>S_GeCa_EngineFail - this would mean that it is a <code>SFX</code>, the sub-group is <code>General</code> and <code>Ca</code> would be for <code>Car</code>.</li>
+</ul>
+<p>You get the idea. I&rsquo;m still not sure if this is the ideal approach. Perhaps using full names would be better, but I&rsquo;ll figure that out in future projects. There&rsquo;s always room for improvement!</p>
+<h2 id="project-setup">Project Setup</h2>
+<p>In the past, I tried work with everything into one project — definitely not the wisest choice. With more experience, I&rsquo;ve shifted to managing multiple projects. The project naming is still a bit chaotic and needs refinement, but here&rsquo;s a glimpse into the current state of my project folder
+<img src="/img/unveiling_project_setup/project_folder.png" alt="project_folder.png"></p>
+<p>You can understand most of it, but some are still misleading for me which to use like <code>SG_NHI_UFO</code> and <code>SG_UFO</code>. One is for drones, guess which one. Yeah, I didn&rsquo;t think this through with the naming. And in some of those projects there are some inconsistencies especially for the ones that were done on the last weeks before the release.</p>
+<p>But that&rsquo;s not what I&rsquo;m getting into now. The main point I want to bring up is that inside, I&rsquo;ve set up Reaper sub-projects that the main project calls. In these sub-projects, I create all the tracks, samples, and FX chains, and then in the main project, I export the files. This trick helps cut down on CPU load and makes it easier to work with the rendered assets.
+<img src="/img/unveiling_project_setup/project_main.png" alt="project_main.png"></p>
+<p>I rely on regions for exporting asset files, and with Reaper&rsquo;s wildcards, it becomes a breeze to export the specific naming I need for different types of audio assets.</p>
+<p>Another reason for using sub-projects within the main project is to avoid having any effects attached to the tracks. Linking the Reaper project with FMOD and refreshing the exported assets from FMOD causes crashes and generates error logs if there are effects on the tracks. It either doesn&rsquo;t import the assets or imports them corrupted. It&rsquo;s a bit of an extra step, but it works for now. I&rsquo;m still on the lookout for a better approach to seamlessly link Reaper projects with FMOD projects.</p>
+<h1 id="fmod-setup">FMOD setup</h1>
+<p>Now in FMOD, as I mentioned, I&rsquo;ve based the events on the audio file names as you can see here:
+<img src="/img/unveiling_project_setup/fmod_events_hierarchy.png" alt="fmod_events_hierarchy.png">
+It makes things a lot tidier and more accessible when I need them</p>
+<p>&ldquo;Since it&rsquo;s a relatively small game with around 30 minutes of gameplay, I decided to keep everything in a single master bank. I didn&rsquo;t feel the need to deal with multiple banks that I&rsquo;d have to load or reload.&rdquo;</p>
+<p>Now, onto the new technique I stumbled upon in FMOD – linking Reaper projects to FMOD. I absolutely love this feature! You simply drag the DAW project into FMOD&rsquo;s asset tab, specify the directory of your exported files, and upon refreshing, it imports the new files. No more navigating through file directories, no more drag and drops – just a refresh, and it&rsquo;s all here!
+<img src="/img/unveiling_project_setup/fmod_asset_hierarcy.png" alt="fmod_asset_hierarcy.png"></p>
+<p>As an example, if I happen to leave an effect on a Reaper track, FMOD throws up this error.
+<img src="/img/unveiling_project_setup/fmod_error.png" alt="fmod_error.png"></p>
+<p>That&rsquo;s why in Reaper&rsquo;s main project, I opt for sub-projects, keeping the main one clean solely for exporting purposes.</p>
+<p>Lastly, for the mixer, I adopted the same approach of grouping track events. This will be beneficial down the line when balancing the overall audio levels.
+<img src="/img/unveiling_project_setup/fmod_routing.png" alt="fmod_routing.png"></p>
+<h1 id="thank-you">Thank you</h1>
+<p>Thank you for reading! I hope that this was informative for you!
+If you are interested more in the game there is a <a href="https://www.youtube.com/watch?v=vzC4W_8MLMo">Youtube video</a> and a <a href="https://store.steampowered.com/app/2719950/Unveiling/">Steam link</a></p>
+
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://sutkusaudio.com/tags/unveiling/">Unveiling</a>&nbsp;
+            
+              <a href="https://sutkusaudio.com/tags/sfx/">sfx</a>&nbsp;
+            
+              <a href="https://sutkusaudio.com/tags/fmod/">FMOD</a>&nbsp;
+            
+              <a href="https://sutkusaudio.com/tags/chark/">Chark</a>&nbsp;
+            
+              <a href="https://sutkusaudio.com/tags/reaper/">Reaper</a>&nbsp;
+            
+          </div>
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2fsutkusaudio.com%2fpost%2f2024-01-09-unveiling-project-setup%2f&amp;text=Project%20setup%20for%20better%20workflow%20on%20Unveiling&amp;via=eshkor101" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsutkusaudio.com%2fpost%2f2024-01-09-unveiling-project-setup%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//reddit.com/submit?url=https%3a%2f%2fsutkusaudio.com%2fpost%2f2024-01-09-unveiling-project-setup%2f&amp;title=Project%20setup%20for%20better%20workflow%20on%20Unveiling" target="_blank" title="Share on Reddit">
+          <i class="fab fa-reddit"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fsutkusaudio.com%2fpost%2f2024-01-09-unveiling-project-setup%2f&amp;title=Project%20setup%20for%20better%20workflow%20on%20Unveiling" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fsutkusaudio.com%2fpost%2f2024-01-09-unveiling-project-setup%2f&amp;title=Project%20setup%20for%20better%20workflow%20on%20Unveiling" target="_blank" title="Share on StumbleUpon">
+          <i class="fab fa-stumbleupon"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fsutkusaudio.com%2fpost%2f2024-01-09-unveiling-project-setup%2f&amp;description=Project%20setup%20for%20better%20workflow%20on%20Unveiling" target="_blank" title="Share on Pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+
+              </div>
+            </section>
+        
+
+        
+          
+            
+          
+
+          
+                  <h4 class="see-also">See also</h4>
+                  <ul>
+                
+                
+                    <li><a href="/post/2023-10-02-exergale-audio-pt1/">Exergale: audio in game</a></li>
+                
+                    <li><a href="/post/2023-03-02-ggj23-rooted-warden/">Rooted Warden - Global Game Jam 2023</a></li>
+                
+                    <li><a href="/post/2022-09-04-ue4-bp-hit-events/">Using UE4 Hit Events in Blueprints</a></li>
+                
+                    <li><a href="/post/2022-01-12-random-pitching/">Random pitch changing for samples in Unity</a></li>
+                
+                    <li><a href="/post/2021-10-15-generating-wind-sounds/">Generating wind from a noise sample in a game engine</a></li>
+                
+              </ul>
+
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://sutkusaudio.com/post/2023-10-02-exergale-audio-pt1/" data-toggle="tooltip" data-placement="top" title="Exergale: audio in game">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:rokas@sutkusaudio.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/eshkor101" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/sutkusaudio" title="Instagram">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="sutkusaudio.com">Rokas Sutkus</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2024
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://sutkusaudio.com">Sutkus Audio</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://sutkusaudio.com/js/main.js"></script>
+<script src="https://sutkusaudio.com/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://sutkusaudio.com/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+

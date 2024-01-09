@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>rokas@sutkusaudio.com (Rokas Sutkus)</managingEditor>
     <webMaster>rokas@sutkusaudio.com (Rokas Sutkus)</webMaster>
-    <lastBuildDate>Mon, 02 Oct 2023 13:20:50 +0300</lastBuildDate><atom:link href="https://sutkusaudio.com/tags/sfx/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Jan 2024 15:20:50 +0300</lastBuildDate><atom:link href="https://sutkusaudio.com/tags/sfx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project setup for better workflow on Unveiling</title>
+      <link>https://sutkusaudio.com/post/2024-01-09-unveiling-project-setup/</link>
+      <pubDate>Tue, 09 Jan 2024 15:20:50 +0300</pubDate>
+      <author>rokas@sutkusaudio.com (Rokas Sutkus)</author>
+      <guid>https://sutkusaudio.com/post/2024-01-09-unveiling-project-setup/</guid>
+      <description>Before diving into a project, I believe that a crucial step is to plan the workflow that will guide the entire process. It&amp;rsquo;s essential to develop a structured approach and stick to it. To streamline my work, I&amp;rsquo;ve considered optimizing my use of Reaper and FMOD.
+When working with Reaper, I find that naming conventions are crucial for understanding and efficiently handling files after rendering. As for FMOD events, I use a similar naming system to the asset files.</description>
+    </item>
+    
     <item>
       <title>Exergale: audio in game</title>
       <link>https://sutkusaudio.com/post/2023-10-02-exergale-audio-pt1/</link>

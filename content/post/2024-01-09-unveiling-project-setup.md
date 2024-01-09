@@ -1,7 +1,7 @@
 ---
 title: "Project setup for better workflow on Unveiling"
 subtitle: "My process and workflow of audio creation and implementation for the game Unveiling "
-date: 2024-01-09T16:20:50+03:00
+date: 2024-01-09T15:20:50+03:00
 tags: ["Unveiling", "sfx", "FMOD", "Chark", "Reaper"]
 ---
 
