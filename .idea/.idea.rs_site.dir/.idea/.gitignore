@@ -1,0 +1,10 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+
+# Rider ignored files
+/contentModel.xml
+/.idea.rs_site.iml
+/projectSettingsUpdater.xml
+/modules.xml
+
