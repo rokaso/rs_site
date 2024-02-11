@@ -1,6 +1,6 @@
 ---
 title: About me
-subtitle: My name is Rokas and I'm delighted you stumbled upon to know a bit about me!
+subtitle: My name is Rokas and I am delighted you want to know a bit about me!
 comments: false
 ---
 
