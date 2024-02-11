@@ -1,6 +1,6 @@
 ---
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: My name is Rokas and I'm delighted you stumbled upon to know a bit about me!
 comments: false
 ---
 
